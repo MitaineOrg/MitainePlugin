@@ -6,21 +6,37 @@ author: Skyspirit
 api-version: 1.20
 prefix: Mitaine
 commands:
-  economie:
-    description: Permet une gestion de l'économie
-    permission: economie.use
+  banque:
+    description: Permet une gestion d'afficher son compte
+    permission: banque.use
+    aliases: [bank, solde]
+  donner:
+    description: Donner de l'argent à un joueur
+    permission: donner.use
+    aliases: [pay]
+  retirer:
+    description: Retirer de l'argent de son compte
+    permission: retirer.use
+    aliases: [pull]
+  deposer:
+    description: Déposer de l'argent sur son compte
+    permission: deposer.use
+    aliases: [push]
   achetericone:
     description: Définit un icone à l'endroit du joueur sur la dynmap
     permission: achetericone.use
+    aliases: [icone]
   leaderboard:
     description: Afficher les plus riches du serveur
     permission: leaderboard.use
   courrier:
     description: Permet une gestion des courriers
     permission: courrier.use
+    aliases: [mail]
   vote:
     description: Voter lors d'un vote
     permission: vote.use
+    aliases: [voter]
   creervote:
     description: Créer un vote
     permission: creervote.use
@@ -39,3 +55,7 @@ commands:
   sethome:
     description: Définir le point base
     permission: sethome.use
+  reward:
+    description: Récupérer son reward du jour
+    permission: reward.use
+    aliases: [daily]
