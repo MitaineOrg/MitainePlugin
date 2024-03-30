@@ -1,7 +1,11 @@
 package io.papermc.mitaine;
 
 import io.papermc.mitaine.courrier.Courrier;
-import io.papermc.mitaine.economie.Economie;
+import io.papermc.mitaine.economie.Achat;
+import io.papermc.mitaine.economie.Banque;
+import io.papermc.mitaine.economie.Leaderboard;
+import io.papermc.mitaine.economie.Mairie;
+import io.papermc.mitaine.reward.Reward;
 import io.papermc.mitaine.teleport.Teleport;
 import io.papermc.mitaine.vote.Vote;
 import org.bukkit.Bukkit;
@@ -14,23 +18,38 @@ public final class MitaineMain extends JavaPlugin {
         saveDefaultConfig();
 
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
-        getCommand("economie").setExecutor(new Economie(this));
-        getCommand("achetericone").setExecutor(new Economie(this));
-        getCommand("leaderboard").setExecutor(new Economie(this));
-        getServer().getPluginManager().registerEvents(new Vote(this), this);
-
-        getCommand("vote").setExecutor(new Vote(this));
-        getCommand("creervote").setExecutor(new Vote(this));
-        getCommand("resultats").setExecutor(new Vote(this));
-        getServer().getPluginManager().registerEvents(new Vote(this), this);
-
+        //Courrier
         getCommand("courrier").setExecutor(new Courrier(this));
         getServer().getPluginManager().registerEvents(new Courrier(this), this);
 
+        //Economie
+        getCommand("banque").setExecutor(new Banque(this));
+        getCommand("donner").setExecutor(new Banque(this));
+        getCommand("retirer").setExecutor(new Banque(this));
+        getCommand("deposer").setExecutor(new Banque(this));
+
+        getCommand("icone").setExecutor(new Achat(this));
+
+        getCommand("leaderboard").setExecutor(new Leaderboard(this));
+
+        getCommand("mairie").setExecutor(new Mairie(this));
+        getServer().getPluginManager().registerEvents(new Vote(this), this);
+
+        //Reward
+        getCommand("reward").setExecutor(new Reward(this));
+        getServer().getPluginManager().registerEvents(new Reward(this), this);
+
+        //Teleport
         getCommand("setspawn").setExecutor(new Teleport(this));
         getCommand("spawn").setExecutor(new Teleport(this));
         getCommand("sethome").setExecutor(new Teleport(this));
         getCommand("home").setExecutor(new Teleport(this));
+
+        //Vote
+        getCommand("vote").setExecutor(new Vote(this));
+        getCommand("creervote").setExecutor(new Vote(this));
+        getCommand("resultats").setExecutor(new Vote(this));
+        getServer().getPluginManager().registerEvents(new Vote(this), this);
     }
 
     @Override

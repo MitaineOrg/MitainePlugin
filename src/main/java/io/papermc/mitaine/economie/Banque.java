@@ -1,6 +1,7 @@
 package io.papermc.mitaine.economie;
 
 import io.papermc.mitaine.MitaineMain;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,10 +15,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-public class Economie implements CommandExecutor {
+public class Banque implements CommandExecutor {
     private final MitaineMain main;
 
-    public Economie(MitaineMain mitaineMain) {
+    public Banque(MitaineMain mitaineMain) {
         this.main = mitaineMain;
     }
 
@@ -45,7 +46,7 @@ public class Economie implements CommandExecutor {
 
             } else if (cmd.getName().equalsIgnoreCase("retirer")) {
                 if (args.length != 1) {
-                    player.sendMessage(config.getString("erreur") + "la commande est /economie retirer <chiffre>");
+                    player.sendMessage(config.getString("erreur") + "la commande est /economie retirer <montant>");
                 } else if (player.getInventory().firstEmpty() == -1) {
                     //faire le test des diamants dispos
                     player.sendMessage(config.getString("erreur") + "vous n'avez plus de place dans votre inventaire");
@@ -61,9 +62,9 @@ public class Economie implements CommandExecutor {
                 }
                 return true;
 
-            } else if (cmd.getName().equalsIgnoreCase("donner")) {
+            } else if (cmd.getName().equalsIgnoreCase("deposer")) {
                 if (args.length != 1) {
-                    player.sendMessage(config.getString("erreur") + "la commande est /economie donner <chiffre>");
+                    player.sendMessage(config.getString("erreur") + "la commande est /economie deposer <montant>");
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
@@ -71,12 +72,33 @@ public class Economie implements CommandExecutor {
                             player.getInventory().remove(new ItemStack(Material.DIAMOND, nb));
                             config.set(pId + ".banque", config.getInt(pId + ".banque") + nb);
                             main.saveConfig();
+                        } else {
+                            player.sendMessage("Vous n'avez pas assez de diamants dans votre inventaire");
                         }
                     } catch (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
                     }
                 }
                 return true;
+            } else if (cmd.getName().equalsIgnoreCase("donner")) {
+                if (args.length != 2) {
+                    player.sendMessage(config.getString("erreur") + "la commande est /economie donner <joueur> <montant>");
+                } else {
+                    try {
+                        int nb = Integer.parseInt(args[1]); //test si c'est un chiffre
+                        if (config.getInt(pId + ".banque") >= nb) {
+                            UUID reciever = Bukkit.getPlayerUniqueId(args[0]);
+                            config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
+                            config.set(reciever + ".banque", config.getInt(reciever + ".banque") + nb);
+                            main.saveConfig();
+                            sender.sendMessage("Vous avez bien envoyé " + config.getString("important") + args[1] + config.getString("normal") + " diamants à " + config.getString("important") + args[0]);
+                        } else {
+                            player.sendMessage("Vous n'avez pas assez de diamants sur votre compte");
+                        }
+                    } catch (NumberFormatException e) {
+                        player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
+                    }
+                }
             }
         }
         return false;
