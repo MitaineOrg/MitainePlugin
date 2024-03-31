@@ -1,60 +1,171 @@
-[19:44:43] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[19:44:45] [ServerMain/INFO]: Loaded 1174 recipes
-[19:44:45] [ServerMain/INFO]: Loaded 1271 advancements
-[19:44:46] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[19:44:46] [Server thread/INFO]: Loading properties
-[19:44:46] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[19:44:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:44:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:44:47] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
-    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
-    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[19:44:47] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[19:44:47] [Server thread/INFO]: Default game type: SURVIVAL
-[19:44:47] [Server thread/INFO]: Generating keypair
-[19:44:47] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:44:47] [Server thread/INFO]: Using default channel type
-[19:44:47] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[19:44:47] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[19:44:47] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[19:44:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:44:47] [Server thread/INFO]: Preparing level "world"
-[19:44:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[19:44:49] [Server thread/INFO]: Time elapsed: 1149 ms
-[19:44:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[19:44:49] [Server thread/INFO]: Time elapsed: 10 ms
-[19:44:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[19:44:49] [Server thread/INFO]: Time elapsed: 9 ms
-[19:44:49] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[19:44:49] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[19:44:49] [Server thread/INFO]: Running delayed init tasks
-[19:44:49] [Server thread/INFO]: Done (3.306s)! For help, type "help"
-[19:44:49] [Server thread/INFO]: Timings Reset
-[22:25:16] [Server thread/INFO]: Stopping the server
-[22:25:16] [Server thread/INFO]: Stopping server
-[22:25:16] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:25:16] [Server thread/INFO]: Au revoir
-[22:25:16] [Server thread/INFO]: Saving players
-[22:25:16] [Server thread/INFO]: Saving worlds
-[22:25:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 76 entity chunks, 0 poi chunks in world 'world' in 0,01s
-[22:25:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[22:25:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 59 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
-[22:25:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:25:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[22:25:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[22:25:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:25:16] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22:25:16] [Server thread/INFO]: Flushing Chunk IO
-[22:25:16] [Server thread/INFO]: Closing Thread Pool
-[22:25:16] [Server thread/INFO]: Closing Server
+[00:03:06] [Server thread/INFO]: Skyspirit issued server command: /pay
+[00:03:14] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:03:18] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:03:22] [Server thread/INFO]: Skyspirit issued server command: /banque
+[00:03:28] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[00:03:30] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[00:03:32] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[00:03:33] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[00:03:34] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[00:04:26] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:04:50] [Server thread/INFO]: Skyspirit issued server command: /deposer 1
+[00:04:52] [Server thread/INFO]: Skyspirit issued server command: /deposer 1
+[00:04:54] [Server thread/INFO]: Skyspirit issued server command: /deposer 10
+[00:04:57] [Server thread/INFO]: Skyspirit issued server command: /deposer 16
+[00:21:23] [Server thread/INFO]: Skyspirit issued server command: /deposer 10
+[00:23:20] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:23:20] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:23:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:23:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:23:20] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:23:20] [Server thread/INFO]: Au revoir
+[00:23:21] [Server thread/INFO]: Loaded 1174 recipes
+[00:23:21] [Server thread/INFO]: Loaded 1271 advancements
+[00:23:21] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:23:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:23:21] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:23:21] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:23:21] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:23:21] [Server thread/INFO]: Timings Reset
+[00:23:26] [Server thread/INFO]: Skyspirit issued server command: /deposer 11
+[00:23:31] [Server thread/INFO]: Skyspirit issued server command: /deposer 15
+[00:23:32] [Server thread/INFO]: Skyspirit issued server command: /deposer 16
+[00:32:34] [Server thread/INFO]: Skyspirit issued server command: /deposer 10
+[00:32:40] [Server thread/INFO]: Skyspirit issued server command: /deposer 10
+[00:32:43] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:33:44] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:33:44] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:33:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:33:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:33:45] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:33:45] [Server thread/INFO]: Au revoir
+[00:33:45] [Server thread/INFO]: Loaded 1174 recipes
+[00:33:45] [Server thread/INFO]: Loaded 1271 advancements
+[00:33:45] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:33:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:33:45] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:33:45] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:33:45] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:33:45] [Server thread/INFO]: Timings Reset
+[00:33:54] [Server thread/INFO]: Skyspirit issued server command: /retirer 10
+[00:33:57] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:34:01] [Server thread/INFO]: Skyspirit issued server command: /deposer 10
+[00:34:03] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:34:19] [Server thread/INFO]: Skyspirit issued server command: /retirer 8
+[00:34:22] [Server thread/INFO]: Skyspirit issued server command: /home loin
+[00:34:27] [Server thread/INFO]: Skyspirit issued server command: /home loin
+[00:34:32] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[00:34:32] [Server thread/INFO]: Skyspirit left the game
+[00:34:35] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[00:34:35] [Server thread/INFO]: Skyspirit joined the game
+[00:34:35] [Server thread/INFO]: Skyspirit[/127.0.0.1:52109] logged in with entity id 3884 at ([world]40.04338498538536, 69.0, 114.23285739926088)
+[00:34:38] [Server thread/INFO]: Skyspirit issued server command: /deposer 8
+[00:52:17] [Server thread/INFO]: Skyspirit issued server command: /retirer 5
+[00:52:19] [Server thread/INFO]: Skyspirit issued server command: /deposer 6
+[00:52:23] [Server thread/INFO]: Skyspirit issued server command: /deposer 64
+[00:52:28] [Server thread/INFO]: Skyspirit issued server command: /deposer 65
+[00:52:31] [Server thread/INFO]: Skyspirit issued server command: /deposer 64
+[00:52:38] [Server thread/INFO]: Skyspirit issued server command: /deposer 5
+[00:52:39] [Server thread/INFO]: Skyspirit issued server command: /deposer 5
+[00:59:20] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[00:59:20] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[00:59:20] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[00:59:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:59:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:59:20] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:59:20] [Server thread/INFO]: Au revoir
+[00:59:21] [Server thread/INFO]: Loaded 1174 recipes
+[00:59:21] [Server thread/INFO]: Loaded 1271 advancements
+[00:59:21] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:59:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:59:21] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:59:21] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:59:21] [Server thread/INFO]: Skyspirit: Reload complete.
+[00:59:21] [Server thread/INFO]: Timings Reset
+[00:59:27] [Server thread/INFO]: Skyspirit issued server command: /retirer 67
+[00:59:33] [Server thread/INFO]: Skyspirit issued server command: /retirer 6
+[00:59:36] [Server thread/INFO]: Skyspirit issued server command: /bank
+[00:59:42] [Server thread/INFO]: Skyspirit issued server command: /retirer 64
+[00:59:44] [Server thread/INFO]: Skyspirit issued server command: /retirer 64
+[00:59:46] [Server thread/INFO]: Skyspirit issued server command: /retirer 66
+[00:59:47] [Server thread/INFO]: Skyspirit issued server command: /retirer 66
+[00:59:51] [Server thread/INFO]: Skyspirit issued server command: /retirer 2
+[00:59:57] [Server thread/INFO]: Skyspirit issued server command: /bank
+[01:00:01] [Server thread/INFO]: Skyspirit issued server command: /retirer 1
+[01:00:28] [Server thread/INFO]: Skyspirit issued server command: /deposer 67
+[01:01:07] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[01:01:07] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[01:01:07] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[01:01:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:01:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:01:07] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[01:01:07] [Server thread/INFO]: Au revoir
+[01:01:07] [Server thread/INFO]: Loaded 1174 recipes
+[01:01:07] [Server thread/INFO]: Loaded 1271 advancements
+[01:01:07] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[01:01:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:01:07] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[01:01:07] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[01:01:07] [Server thread/INFO]: Skyspirit: Reload complete.
+[01:01:07] [Server thread/INFO]: Timings Reset
+[01:01:12] [Server thread/INFO]: Skyspirit issued server command: /deposer 70
+[01:01:17] [Server thread/INFO]: Skyspirit issued server command: /deposer 64
+[01:01:19] [Server thread/INFO]: Skyspirit issued server command: /deposer 9
+[01:01:23] [Server thread/INFO]: Skyspirit issued server command: /retirer 70
+[01:02:25] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[01:02:25] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[01:02:25] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[01:02:25] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:02:25] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:02:25] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[01:02:25] [Server thread/INFO]: Au revoir
+[01:02:25] [Server thread/INFO]: Loaded 1174 recipes
+[01:02:25] [Server thread/INFO]: Loaded 1271 advancements
+[01:02:25] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[01:02:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:02:25] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[01:02:25] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[01:02:25] [Server thread/INFO]: Skyspirit: Reload complete.
+[01:02:25] [Server thread/INFO]: Timings Reset
+[01:02:31] [Server thread/INFO]: Skyspirit issued server command: /donner Hybanos 70
+[01:02:34] [Server thread/INFO]: Skyspirit issued server command: /donner Hybanos 7
+[01:02:38] [Server thread/INFO]: Skyspirit issued server command: /bank
+[01:02:51] [Server thread/INFO]: Skyspirit issued server command: /deposer 64
+[01:02:55] [Server thread/INFO]: Skyspirit issued server command: /donner Hybanos 7
+[01:03:18] [Server thread/INFO]: Skyspirit issued server command: /donner Aypierre 7
+[01:03:30] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[01:03:30] [Server thread/INFO]: Skyspirit left the game
+[01:03:31] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[01:03:31] [Server thread/INFO]: Skyspirit joined the game
+[01:03:31] [Server thread/INFO]: Skyspirit[/127.0.0.1:52337] logged in with entity id 6115 at ([world]40.04338498538536, 69.0, 114.23285739926088)
+[01:04:33] [Server thread/INFO]: Skyspirit issued server command: /bank
+[01:04:36] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[01:04:36] [Server thread/INFO]: Skyspirit left the game
+[01:04:43] [Server thread/INFO]: Stopping the server
+[01:04:43] [Server thread/INFO]: Stopping server
+[01:04:43] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[01:04:43] [Server thread/INFO]: Au revoir
+[01:04:43] [Server thread/INFO]: Saving players
+[01:04:43] [Server thread/INFO]: Saving worlds
+[01:04:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saved 35 block chunks, 173 entity chunks, 0 poi chunks in world 'world' in 0,07s
+[01:04:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:04:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 63 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
+[01:04:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:04:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[01:04:43] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[01:04:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:04:43] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01:04:43] [Server thread/INFO]: Flushing Chunk IO
+[01:04:43] [Server thread/INFO]: Closing Thread Pool
+[01:04:43] [Server thread/INFO]: Closing Server

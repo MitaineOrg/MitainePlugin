@@ -53,9 +53,14 @@ public class Banque implements CommandExecutor {
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
-                        player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
-                        config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
-                        main.saveConfig();
+                        if (config.getInt(pId + ".banque", config.getInt(pId + ".banque")) >= nb) {
+                                player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
+                                config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
+                                main.saveConfig();
+                                sender.sendMessage("Vous avez bien retiré " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
+                        } else {
+                            player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants en banque");
+                        }
                     } catch (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
                     }
@@ -68,12 +73,17 @@ public class Banque implements CommandExecutor {
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
-                        if (player.getInventory().contains(new ItemStack(Material.DIAMOND, nb))) {
-                            player.getInventory().remove(new ItemStack(Material.DIAMOND, nb));
-                            config.set(pId + ".banque", config.getInt(pId + ".banque") + nb);
-                            main.saveConfig();
+                        if (player.getInventory().contains(new ItemStack(Material.DIAMOND, nb), 1)) {
+                            if (nb <= 64) {
+                                player.getInventory().remove(new ItemStack(Material.DIAMOND, nb));
+                                config.set(pId + ".banque", config.getInt(pId + ".banque") + nb);
+                                main.saveConfig();
+                                sender.sendMessage("Vous avez bien déposé " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
+                            } else {
+                                player.sendMessage(config.getString("erreur") + "Vous ne pouvez déposer que 64 diamants en une fois");
+                            }
                         } else {
-                            player.sendMessage("Vous n'avez pas assez de diamants dans votre inventaire");
+                            player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants dans votre inventaire");
                         }
                     } catch (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");

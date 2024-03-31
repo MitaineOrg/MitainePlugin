@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import static java.lang.Math.*;
+
 import java.util.UUID;
 
 public class Teleport implements CommandExecutor {
@@ -82,9 +83,9 @@ public class Teleport implements CommandExecutor {
                 player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants en banque");
             }
         } else if (config.getString(emplacement + ".world") == null) {
-            player.sendMessage("Le point de téléportation n'existe pas");
+            player.sendMessage(config.getString("erreur") + "Le point de téléportation n'existe pas");
         } else {
-            player.sendMessage("La commande ne peut se faire que dans le monde du point de téléportation");
+            player.sendMessage(config.getString("erreur") + "La commande ne peut se faire que dans le monde du point de téléportation");
         }
     }
 

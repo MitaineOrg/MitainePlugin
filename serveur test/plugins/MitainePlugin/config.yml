@@ -15,13 +15,13 @@ spawnPoint:
 
 # Infos de la Mairie
 mairie:
-  banque: 29
+  banque: 31
 
 # Les Joueurs et leur data
 95f08a24-a484-4771-bf43-e3e2817b74f3:
-  banque: 6
+  banque: 53
   courriers:
-    nombre: 3
+    nombre: 0
     '1':
       date: 05-03-2024 à 20:40:42
       sender: Hybanos
@@ -78,3 +78,4 @@ b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
       sender: Skyspirit
       idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
       message: 'test '
+  banque: 7
