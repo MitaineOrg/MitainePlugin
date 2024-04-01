@@ -50,6 +50,9 @@ public final class MitaineMain extends JavaPlugin {
         getCommand("creervote").setExecutor(new Vote(this));
         getCommand("resultats").setExecutor(new Vote(this));
         getServer().getPluginManager().registerEvents(new Vote(this), this);
+
+        //Mitaine
+        getCommand("aide").setExecutor(new Aide(this));
     }
 
     @Override

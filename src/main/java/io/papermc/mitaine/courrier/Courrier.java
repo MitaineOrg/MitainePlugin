@@ -30,10 +30,10 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         main.reloadConfig();
         FileConfiguration config = main.getConfig();
         String nombre = config.getString(player.getUniqueId() + ".courriers.nombre");
-        if (nombre != null) {
-            config.set(player.getUniqueId() + ".courriers.nombre", 0);
-            main.saveConfig();
-        }
+//        if (nombre != null) {
+//            config.set(player.getUniqueId() + ".courriers.nombre", 0);
+//            main.saveConfig();
+//        }
         player.sendMessage("Vous avez " + config.getString("important") + nombre + config.getString("normal") + " courriers en attente");
     }
 

@@ -76,3 +76,9 @@ commands:
   resultats:
     description: Afficher les résultats du dernier vote
     permission: resultats.use
+
+  #Aide
+  aide:
+    description: Aide pour mitaine
+    permission: aide.use
+    aliases: [mitaine]

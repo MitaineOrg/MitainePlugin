@@ -7,10 +7,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.Listener;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Leaderboard implements CommandExecutor, TabCompleter {
@@ -24,7 +25,10 @@ public class Leaderboard implements CommandExecutor, TabCompleter {
         if (cmd.getName().equalsIgnoreCase("leaderboard")) {
             FileConfiguration config = main.getConfig();
             if (args.length == 1) {
-                // Faire récup noms joueurs
+                ArrayList<String> commandes = new ArrayList<>();
+                for (Player p : Bukkit.getOnlinePlayers()) {
+
+                }
             } else {
                 sender.sendMessage(config.getString("erreur") + "La commande est " + cmd + " <joueur|equipe>");
             }
