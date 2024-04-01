@@ -9,13 +9,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-public class Banque implements CommandExecutor {
+public class Banque implements CommandExecutor, Listener {
     private final MitaineMain main;
 
     public Banque(MitaineMain mitaineMain) {

@@ -39,6 +39,7 @@ commands:
   leaderboard:
     description: Afficher les plus riches du serveur
     permission: leaderboard.use
+    aliases: [top]
 
   mairie:
     description: Permet d'accéder aux commandes du maire

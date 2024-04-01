@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class Mairie implements CommandExecutor, Listener, TabCompleter {
+public class Mairie implements CommandExecutor, TabCompleter {
     private final MitaineMain main;
     public Mairie(MitaineMain mitaineMain) {
         this.main = mitaineMain;

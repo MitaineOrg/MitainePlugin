@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class Achat implements CommandExecutor, Listener, TabCompleter {
+public class Achat implements CommandExecutor, TabCompleter {
     private final MitaineMain main;
     public Achat(MitaineMain mitaineMain) {
         this.main = mitaineMain;
