@@ -1,200 +1,35 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2024-02-27 22:11:38 +0100"
+      "unlock_right_away": "2024-04-02 23:51:43 +0200"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:frozen_river": "2024-03-12 19:45:38 +0100",
-      "minecraft:forest": "2024-03-17 14:28:51 +0100",
-      "minecraft:taiga": "2024-03-17 14:28:58 +0100",
-      "minecraft:river": "2024-03-17 14:28:00 +0100",
-      "minecraft:meadow": "2024-03-17 14:28:50 +0100",
-      "minecraft:snowy_plains": "2024-02-27 22:11:38 +0100",
-      "minecraft:dripstone_caves": "2024-03-07 22:58:48 +0100",
-      "minecraft:plains": "2024-02-28 23:13:29 +0100"
+      "minecraft:forest": "2024-04-02 23:53:48 +0200",
+      "minecraft:deep_frozen_ocean": "2024-04-03 00:12:47 +0200",
+      "minecraft:river": "2024-04-02 23:53:18 +0200",
+      "minecraft:dripstone_caves": "2024-04-02 23:54:09 +0200",
+      "minecraft:plains": "2024-04-02 23:53:06 +0200"
     },
     "done": false
   },
-  "minecraft:recipes/combat/diamond_leggings": {
+  "minecraft:recipes/building_blocks/bamboo_mosaic_slab": {
     "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
+      "has_bamboo_mosaic": "2024-04-02 23:58:13 +0200"
     },
     "done": true
   },
-  "minecraft:recipes/combat/diamond_sword": {
+  "minecraft:recipes/building_blocks/bamboo_mosaic_stairs": {
     "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
+      "has_bamboo_mosaic": "2024-04-02 23:58:13 +0200"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/jukebox": {
+  "minecraft:recipes/food/cake": {
     "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_chestplate": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_helmet": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_pickaxe": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/diamond_block": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_hoe": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_shovel": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_diamond": {
-    "criteria": {
-      "diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_axe": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_boots": {
-    "criteria": {
-      "has_diamond": "2024-03-05 20:28:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/bamboo_raft": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2024-03-07 22:58:43 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/flint_and_steel": {
-    "criteria": {
-      "has_obsidian": "2024-03-12 20:50:45 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/form_obsidian": {
-    "criteria": {
-      "obsidian": "2024-03-12 20:50:45 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/enchanting_table": {
-    "criteria": {
-      "has_obsidian": "2024-03-12 20:50:45 +0100"
-    },
-    "done": true
-  },
-  "minecraft:nether/root": {
-    "criteria": {
-      "entered_nether": "2024-03-12 20:51:20 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2024-03-12 20:51:20 +0100"
-    },
-    "done": true
-  },
-  "minecraft:nether/explore_nether": {
-    "criteria": {
-      "minecraft:basalt_deltas": "2024-03-12 20:51:21 +0100"
-    },
-    "done": false
-  },
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2024-04-01 00:32:31 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/bamboo_planks": {
-    "criteria": {
-      "has_logs": "2024-04-01 18:57:31 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/bamboo_hanging_sign": {
-    "criteria": {
-      "has_stripped_logs": "2024-04-01 18:57:31 +0200"
+      "has_egg": "2024-04-03 00:08:08 +0200"
     },
     "done": true
   },

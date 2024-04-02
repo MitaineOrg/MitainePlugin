@@ -1,183 +1,199 @@
-[18:25:13] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[18:25:15] [ServerMain/INFO]: Loaded 1174 recipes
-[18:25:15] [ServerMain/INFO]: Loaded 1271 advancements
-[18:25:15] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[18:25:15] [Server thread/INFO]: Loading properties
-[18:25:15] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[18:25:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:25:16] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:25:16] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
-    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
-    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[18:25:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[18:25:16] [Server thread/INFO]: Default game type: SURVIVAL
-[18:25:16] [Server thread/INFO]: Generating keypair
-[18:25:16] [Server thread/INFO]: Starting Minecraft server on *:25565
-[18:25:16] [Server thread/INFO]: Using default channel type
-[18:25:16] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[18:25:16] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[18:25:16] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[18:25:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[18:25:16] [Server thread/INFO]: Preparing level "world"
-[18:25:17] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[18:25:17] [Server thread/INFO]: Time elapsed: 242 ms
-[18:25:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[18:25:17] [Server thread/INFO]: Time elapsed: 22 ms
-[18:25:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[18:25:17] [Server thread/INFO]: Time elapsed: 14 ms
-[18:25:17] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[18:25:17] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[18:25:17] [Server thread/INFO]: Running delayed init tasks
-[18:25:17] [Server thread/INFO]: Done (2.110s)! For help, type "help"
-[18:25:17] [Server thread/INFO]: Timings Reset
-[18:26:09] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:26:09] [Server thread/INFO]: Skyspirit joined the game
-[18:26:09] [Server thread/INFO]: Skyspirit[/127.0.0.1:58146] logged in with entity id 214 at ([world]41.63538296224266, 69.0, 112.67107620866334)
-[18:38:35] [Server thread/INFO]: Skyspirit issued server command: /help
-[18:38:47] [Server thread/INFO]: Skyspirit issued server command: /help 2
-[18:38:57] [Server thread/INFO]: Skyspirit issued server command: /help 3
-[18:47:36] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:47:36] [Server thread/INFO]: Skyspirit left the game
-[18:47:38] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:47:38] [Server thread/INFO]: Skyspirit joined the game
-[18:47:38] [Server thread/INFO]: Skyspirit[/127.0.0.1:58523] logged in with entity id 2239 at ([world]34.703596998490774, 69.0, 104.9186058250244)
-[18:48:06] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[18:48:06] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[18:48:06] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[18:48:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:48:06] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:48:06] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[18:48:06] [Server thread/INFO]: Au revoir
-[18:48:07] [Server thread/INFO]: Loaded 1174 recipes
-[18:48:07] [Server thread/INFO]: Loaded 1271 advancements
-[18:48:07] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[18:48:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[18:48:07] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[18:48:07] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[18:48:07] [Server thread/INFO]: Skyspirit: Reload complete.
-[18:48:07] [Server thread/INFO]: Timings Reset
-[18:48:09] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:48:09] [Server thread/INFO]: Skyspirit left the game
-[18:48:12] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:48:12] [Server thread/INFO]: Skyspirit joined the game
-[18:48:12] [Server thread/INFO]: Skyspirit[/127.0.0.1:58538] logged in with entity id 2289 at ([world]37.51884799091234, 69.0, 110.60471704821951)
-[18:48:40] [Server thread/INFO]: Skyspirit issued server command: /courrier list
-[18:48:42] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[18:50:49] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[18:50:49] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[18:50:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:50:49] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:50:49] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[18:50:49] [Server thread/INFO]: Au revoir
-[18:50:50] [Server thread/INFO]: Loaded 1174 recipes
-[18:50:50] [Server thread/INFO]: Loaded 1271 advancements
-[18:50:50] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[18:50:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[18:50:50] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[18:50:50] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[18:50:50] [Server thread/INFO]: CONSOLE: Reload complete.
-[18:50:50] [Server thread/INFO]: Timings Reset
-[18:50:59] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:50:59] [Server thread/INFO]: Skyspirit left the game
-[18:51:01] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:51:01] [Server thread/INFO]: Skyspirit joined the game
-[18:51:01] [Server thread/INFO]: Skyspirit[/127.0.0.1:58590] logged in with entity id 2525 at ([world]35.33599702679328, 69.0, 107.26389191593267)
-[18:51:17] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:51:17] [Server thread/INFO]: Skyspirit left the game
-[18:51:18] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:51:18] [Server thread/INFO]: Skyspirit joined the game
-[18:51:18] [Server thread/INFO]: Skyspirit[/127.0.0.1:58600] logged in with entity id 2549 at ([world]35.33599702679328, 69.0, 107.26389191593267)
-[18:51:40] [Server thread/INFO]: Skyspirit issued server command: /bank
-[18:51:45] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[18:51:46] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[18:52:19] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[18:52:24] [Server thread/INFO]: Skyspirit issued server command: /courrier listez
-[18:52:25] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[18:52:30] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
-[18:52:46] [Server thread/INFO]: Skyspirit issued server command: /spawn
-[18:52:46] [Server thread/WARN]: Skyspirit moved too quickly! -11.50558123893746,0.0,-8.094576702134162
-[18:52:50] [Server thread/INFO]: Skyspirit issued server command: /bank
-[18:52:56] [Server thread/INFO]: Skyspirit issued server command: /home loin
-[18:52:56] [Server thread/WARN]: Skyspirit moved too quickly! -255.0,-1.0,30.0
-[18:52:56] [Server thread/WARN]: Skyspirit moved too quickly! -255.0,-1.0,30.0
-[18:53:03] [Server thread/INFO]: Skyspirit issued server command: /home base
-[18:53:06] [Server thread/INFO]: Skyspirit issued server command: /home neth
-[18:53:10] [Server thread/INFO]: Skyspirit issued server command: /home spawn
-[18:53:13] [Server thread/INFO]: Skyspirit issued server command: /spawn
-[18:53:25] [Server thread/INFO]: Skyspirit issued server command: /home test
-[18:53:30] [Server thread/INFO]: Skyspirit issued server command: /home neth
-[18:53:43] [Server thread/INFO]: Skyspirit issued server command: /creervote oui non prout
-[18:53:48] [Server thread/INFO]: Skyspirit issued server command: /vote 2
-[18:53:54] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:53:54] [Server thread/INFO]: Skyspirit left the game
-[18:53:55] [User Authenticator #3/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:53:55] [Server thread/INFO]: Skyspirit joined the game
-[18:53:55] [Server thread/INFO]: Skyspirit[/127.0.0.1:58645] logged in with entity id 3356 at ([world]24.109932948490037, 67.5416919108035, 146.26052955436109)
-[18:54:02] [Server thread/INFO]: Skyspirit issued server command: /resultats
-[18:55:30] [Server thread/INFO]: Skyspirit issued server command: /datapack list
-[18:55:32] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[18:55:32] [Server thread/INFO]: Skyspirit left the game
-[18:56:30] [User Authenticator #4/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[18:56:30] [Server thread/INFO]: Skyspirit joined the game
-[18:56:30] [Server thread/INFO]: Skyspirit[/127.0.0.1:58710] logged in with entity id 3589 at ([world]31.57336158832728, 69.0, 106.21120493444344)
-[21:16:35] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[21:16:35] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[21:16:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[21:16:35] [Server thread/INFO]: Using 4 threads for Netty based IO
-[21:16:36] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[21:16:36] [Server thread/INFO]: Au revoir
-[21:16:36] [Server thread/INFO]: Loaded 1174 recipes
-[21:16:36] [Server thread/INFO]: Loaded 1271 advancements
-[21:16:36] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[21:16:36] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[21:16:36] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[21:16:36] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[21:16:36] [Server thread/INFO]: CONSOLE: Reload complete.
-[21:16:36] [Server thread/INFO]: Timings Reset
-[21:16:40] [Server thread/INFO]: Skyspirit issued server command: /aide
-[21:18:49] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[21:18:49] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[21:18:49] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[21:18:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[21:18:49] [Server thread/INFO]: Using 4 threads for Netty based IO
-[21:18:49] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[21:18:49] [Server thread/INFO]: Au revoir
-[21:18:49] [Server thread/INFO]: Loaded 1174 recipes
-[21:18:49] [Server thread/INFO]: Loaded 1271 advancements
-[21:18:49] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[21:18:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[21:18:49] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[21:18:49] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[21:18:49] [Server thread/INFO]: Skyspirit: Reload complete.
-[21:18:49] [Server thread/INFO]: Timings Reset
-[21:18:52] [Server thread/INFO]: Skyspirit issued server command: /aide
-[23:32:05] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[23:32:05] [Server thread/INFO]: Skyspirit left the game
-[23:32:12] [Server thread/INFO]: Stopping the server
-[23:32:12] [Server thread/INFO]: Stopping server
-[23:32:12] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[23:32:12] [Server thread/INFO]: Au revoir
-[23:32:12] [Server thread/INFO]: Saving players
-[23:32:12] [Server thread/INFO]: Saving worlds
-[23:32:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 200 entity chunks, 0 poi chunks in world 'world' in 0,03s
-[23:32:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:32:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 108 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
-[23:32:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:32:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[23:32:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[23:32:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:32:12] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[23:32:12] [Server thread/INFO]: Flushing Chunk IO
-[23:32:12] [Server thread/INFO]: Closing Thread Pool
-[23:32:12] [Server thread/INFO]: Closing Server
+[00:03:09] [Server thread/INFO]: Hybanos issued server command: /tp Skyspirit
+[00:03:09] [Server thread/INFO]: [Hybanos: Teleported Hybanos to Skyspirit]
+[00:04:00] [Server thread/INFO]: Hybanos has made the advancement [Diamonds!]
+[00:05:42] [Server thread/INFO]: Hybanos issued server command: /scoreboard objectives add Time
+[00:05:56] [Server thread/INFO]: Hybanos issued server command: /scoreboard objectives add Time minecraft.custom:minecraft.play_time
+[00:05:56] [Server thread/INFO]: [Hybanos: Created new objective [Time]]
+[00:06:08] [Server thread/INFO]: Hybanos issued server command: /scoreboard objectives setdisplay sidebar Time
+[00:06:08] [Server thread/INFO]: [Hybanos: Set display slot sidebar to show objective Time]
+[00:08:29] [Server thread/INFO]: Skyspirit issued server command: /tps
+[00:12:19] [Server thread/INFO]: Hybanos issued server command: /tp @p -4840 80 -4840 0 0
+[00:12:19] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4839.500000, 80.000000, -4839.500000]
+[00:12:19] [Server thread/WARN]: Hybanos moved too quickly! -4874.393844119783,13.0,-4887.082562669912
+[00:12:19] [Server thread/WARN]: Hybanos moved too quickly! -4874.393844119783,13.0,-4887.082562669912
+[00:12:22] [Server thread/INFO]: Hybanos issued server command: /tp @p -4840 80 -4840 90 0
+[00:12:22] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4839.500000, 80.000000, -4839.500000]
+[00:12:22] [Server thread/WARN]: Hybanos moved too quickly! 0.0,25.423978185671466,0.0
+[00:12:25] [Server thread/INFO]: Hybanos issued server command: /tp @p -4840 80 -4840 180 0
+[00:12:25] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4839.500000, 80.000000, -4839.500000]
+[00:12:28] [Server thread/INFO]: Hybanos issued server command: /tp @p -4840 80 -4840 -90 0
+[00:12:28] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4839.500000, 80.000000, -4839.500000]
+[00:12:31] [Server thread/INFO]: Hybanos issued server command: /tp @p -4680 80 -4840 0 0
+[00:12:31] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4679.500000, 80.000000, -4839.500000]
+[00:12:31] [Server thread/WARN]: Hybanos moved too quickly! 160.0,0.0,0.0
+[00:12:34] [Server thread/INFO]: Hybanos issued server command: /tp @p -4680 80 -4840 90 0
+[00:12:34] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4679.500000, 80.000000, -4839.500000]
+[00:12:37] [Server thread/INFO]: Hybanos issued server command: /tp @p -4680 80 -4840 180 0
+[00:12:37] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4679.500000, 80.000000, -4839.500000]
+[00:12:41] [Server thread/INFO]: Hybanos issued server command: /tp @p -4680 80 -4840 -90 0
+[00:12:41] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4679.500000, 80.000000, -4839.500000]
+[00:12:44] [Server thread/INFO]: Hybanos issued server command: /tp @p -4520 80 -4840 0 0
+[00:12:44] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4519.500000, 80.000000, -4839.500000]
+[00:12:46] [Server thread/INFO]: Skyspirit issued server command: /tp Hybanos
+[00:12:46] [Server thread/INFO]: [Skyspirit: Teleported Skyspirit to Hybanos]
+[00:12:47] [Server thread/INFO]: Hybanos issued server command: /tp @p -4520 80 -4840 90 0
+[00:12:47] [Server thread/INFO]: [Hybanos: Teleported Skyspirit to -4519.500000, 80.000000, -4839.500000]
+[00:12:50] [Server thread/INFO]: Hybanos issued server command: /tp @p -4520 80 -4840 180 0
+[00:12:50] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4519.500000, 80.000000, -4839.500000]
+[00:12:53] [Server thread/INFO]: Hybanos issued server command: /tp @p -4520 80 -4840 -90 0
+[00:12:53] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4519.500000, 80.000000, -4839.500000]
+[00:12:56] [Server thread/INFO]: Hybanos issued server command: /tp @p -4360 80 -4840 0 0
+[00:12:56] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4359.500000, 80.000000, -4839.500000]
+[00:12:59] [Server thread/INFO]: Hybanos issued server command: /tp @p -4360 80 -4840 90 0
+[00:12:59] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4359.500000, 80.000000, -4839.500000]
+[00:13:02] [Server thread/INFO]: Hybanos issued server command: /tp @p -4360 80 -4840 180 0
+[00:13:02] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4359.500000, 80.000000, -4839.500000]
+[00:13:04] [Server thread/INFO]: Skyspirit issued server command: /tp 0 100 0
+[00:13:04] [Server thread/INFO]: [Skyspirit: Teleported Skyspirit to 0.500000, 100.000000, 0.500000]
+[00:13:06] [Server thread/INFO]: Hybanos issued server command: /tp @p -4360 80 -4840 -90 0
+[00:13:06] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4359.500000, 80.000000, -4839.500000]
+[00:13:09] [Server thread/INFO]: Hybanos issued server command: /tp @p -4200 80 -4840 0 0
+[00:13:09] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4199.500000, 80.000000, -4839.500000]
+[00:13:12] [Server thread/INFO]: Hybanos issued server command: /tp @p -4200 80 -4840 90 0
+[00:13:12] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4199.500000, 80.000000, -4839.500000]
+[00:13:15] [Server thread/INFO]: Hybanos issued server command: /tp @p -4200 80 -4840 180 0
+[00:13:15] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4199.500000, 80.000000, -4839.500000]
+[00:13:18] [Server thread/INFO]: Hybanos issued server command: /tp @p -4200 80 -4840 -90 0
+[00:13:18] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4199.500000, 80.000000, -4839.500000]
+[00:13:21] [Server thread/INFO]: Hybanos issued server command: /tp @p -4040 80 -4840 0 0
+[00:13:21] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4039.500000, 80.000000, -4839.500000]
+[00:13:24] [Server thread/INFO]: Hybanos issued server command: /tp @p -4040 80 -4840 90 0
+[00:13:24] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4039.500000, 80.000000, -4839.500000]
+[00:13:27] [Server thread/INFO]: Hybanos issued server command: /tp @p -4040 80 -4840 180 0
+[00:13:27] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4039.500000, 80.000000, -4839.500000]
+[00:13:31] [Server thread/INFO]: Hybanos issued server command: /tp @p -4040 80 -4840 -90 0
+[00:13:31] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -4039.500000, 80.000000, -4839.500000]
+[00:13:34] [Server thread/INFO]: Hybanos issued server command: /tp @p -3880 80 -4840 0 0
+[00:13:34] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3879.500000, 80.000000, -4839.500000]
+[00:13:37] [Server thread/INFO]: Hybanos issued server command: /tp @p -3880 80 -4840 90 0
+[00:13:37] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3879.500000, 80.000000, -4839.500000]
+[00:13:40] [Server thread/INFO]: Hybanos issued server command: /tp @p -3880 80 -4840 180 0
+[00:13:40] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3879.500000, 80.000000, -4839.500000]
+[00:13:43] [Server thread/INFO]: Hybanos issued server command: /tp @p -3880 80 -4840 -90 0
+[00:13:43] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3879.500000, 80.000000, -4839.500000]
+[00:13:46] [Server thread/INFO]: Hybanos issued server command: /tp @p -3720 80 -4840 0 0
+[00:13:46] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3719.500000, 80.000000, -4839.500000]
+[00:13:46] [Server thread/WARN]: Hybanos moved too quickly! 160.0,0.0,0.0
+[00:13:46] [Server thread/WARN]: Hybanos moved too quickly! 160.0,0.0,0.0
+[00:13:49] [Server thread/INFO]: Hybanos issued server command: /tp @p -3720 80 -4840 90 0
+[00:13:49] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3719.500000, 80.000000, -4839.500000]
+[00:13:52] [Server thread/INFO]: Hybanos issued server command: /tp @p -3720 80 -4840 180 0
+[00:13:52] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3719.500000, 80.000000, -4839.500000]
+[00:13:56] [Server thread/INFO]: Hybanos issued server command: /tp @p -3720 80 -4840 -90 0
+[00:13:56] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3719.500000, 80.000000, -4839.500000]
+[00:13:59] [Server thread/INFO]: Hybanos issued server command: /tp @p -3560 80 -4840 0 0
+[00:13:59] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3559.500000, 80.000000, -4839.500000]
+[00:14:02] [Server thread/INFO]: Hybanos issued server command: /tp @p -3560 80 -4840 90 0
+[00:14:02] [Server thread/INFO]: [Hybanos: Teleported Hybanos to -3559.500000, 80.000000, -4839.500000]
+[00:18:41] [Server thread/INFO]: Skyspirit issued server command: /scoreboard objectives remove Time
+[00:18:41] [Server thread/INFO]: [Skyspirit: Removed objective [Time]]
+[00:18:48] [Server thread/INFO]: Hybanos issued server command: /mspt
+[00:19:03] [Server thread/INFO]: Hybanos issued server command: /mspt
+[00:19:04] [Server thread/INFO]: Hybanos issued server command: /mspt
+[00:19:16] [Server thread/INFO]: Hybanos issued server command: /leaderboard
+[00:19:17] [Server thread/INFO]: Hybanos issued server command: /leaderboard e
+[00:20:35] [Server thread/INFO]: Hybanos lost connection: Disconnected
+[00:20:35] [Server thread/INFO]: Hybanos left the game
+[00:20:55] [Server thread/INFO]: CONSOLE: Usage: /reload [permissions|commands|confirm]
+[00:20:58] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:20:58] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:20:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:20:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:20:58] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:20:58] [Server thread/INFO]: Au revoir
+[00:20:58] [Server thread/INFO]: Loaded 1298 recipes
+[00:20:58] [Server thread/INFO]: Loaded 1395 advancements
+[00:20:58] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:20:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:20:58] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:20:58] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:20:59] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:20:59] [Server thread/INFO]: Timings Reset
+[00:21:05] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:21:07] [Server thread/INFO]: Skyspirit issued server command: /top
+[00:21:27] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[00:21:27] [Server thread/INFO]: Skyspirit left the game
+[00:21:29] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[00:21:29] [Server thread/INFO]: Skyspirit joined the game
+[00:21:29] [Server thread/INFO]: Skyspirit[/127.0.0.1:50706] logged in with entity id 15479 at ([world]27.80161765827947, 65.0, 17.255145609144336)
+[00:21:32] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:21:35] [Server thread/INFO]: Skyspirit issued server command: /top
+[00:21:36] [Server thread/INFO]: Skyspirit issued server command: /top
+[00:22:28] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:22:31] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[00:22:31] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[00:22:31] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[00:22:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:22:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:22:32] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:22:32] [Server thread/INFO]: Au revoir
+[00:22:32] [Server thread/INFO]: Loaded 1298 recipes
+[00:22:32] [Server thread/INFO]: Loaded 1395 advancements
+[00:22:32] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:22:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:22:32] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:22:32] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:22:32] [Server thread/INFO]: Skyspirit: Reload complete.
+[00:22:32] [Server thread/INFO]: Timings Reset
+[00:22:34] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:22:53] [User Authenticator #2/INFO]: UUID of player DuckIsTheBot is f3bb5e10-94da-4dda-88b0-595305de7a0e
+[00:22:53] [Server thread/INFO]: DuckIsTheBot joined the game
+[00:22:53] [Server thread/INFO]: DuckIsTheBot[/141.145.210.183:43578] logged in with entity id 15710 at ([world]23.5, 63.0, -3.5)
+[00:22:55] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:22:57] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:23:04] [User Authenticator #2/INFO]: UUID of player Hybanose is ad583e58-a368-4b56-acb6-f3c691f66061
+[00:23:04] [Server thread/INFO]: Hybanose joined the game
+[00:23:04] [Server thread/INFO]: Hybanose[/141.145.210.183:39840] logged in with entity id 15743 at ([world]26.5, 64.0, 4.5)
+[00:23:08] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:24:06] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[00:24:06] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[00:24:06] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[00:24:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:24:06] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:24:06] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:24:06] [Server thread/INFO]: Au revoir
+[00:24:07] [Server thread/INFO]: Loaded 1298 recipes
+[00:24:07] [Server thread/INFO]: Loaded 1395 advancements
+[00:24:07] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:24:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:24:07] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:24:07] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:24:07] [Server thread/INFO]: Skyspirit: Reload complete.
+[00:24:07] [Server thread/INFO]: Timings Reset
+[00:24:08] [Server thread/INFO]: Skyspirit issued server command: /leaderboard
+[00:24:57] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[00:25:03] [Server thread/INFO]: Skyspirit issued server command: /stop
+[00:25:03] [Server thread/INFO]: [Skyspirit: Stopping the server]
+[00:25:03] [Server thread/INFO]: Stopping server
+[00:25:03] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:25:03] [Server thread/INFO]: Au revoir
+[00:25:03] [Server thread/INFO]: Saving players
+[00:25:03] [Server thread/INFO]: Skyspirit lost connection: Server closed
+[00:25:03] [Server thread/INFO]: Skyspirit left the game
+[00:25:03] [Server thread/INFO]: DuckIsTheBot lost connection: Server closed
+[00:25:03] [Server thread/INFO]: DuckIsTheBot left the game
+[00:25:03] [Server thread/INFO]: Hybanose lost connection: Server closed
+[00:25:03] [Server thread/INFO]: Hybanose left the game
+[00:25:03] [Server thread/INFO]: Saving worlds
+[00:25:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:25:03] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[00:25:03] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[00:25:03] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Saved 447 block chunks, 326 entity chunks, 0 poi chunks in world 'world' in 0,37s
+[00:25:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:25:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 106 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
+[00:25:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:25:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[00:25:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[00:25:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:25:04] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:25:04] [Server thread/INFO]: Flushing Chunk IO
+[00:25:04] [Server thread/INFO]: Closing Thread Pool
+[00:25:04] [Server thread/INFO]: Closing Server

@@ -28,7 +28,7 @@ public class Banque implements CommandExecutor, Listener {
         Player player = join.getPlayer();
         main.reloadConfig();
         FileConfiguration config = main.getConfig();
-        if (config.getString(player.getUniqueId() + ".banque") != null) {
+        if (config.getString(player.getUniqueId() + ".banque") == null) {
             config.set(player.getUniqueId() + ".banque", 0);
             main.saveConfig();
         }
@@ -54,13 +54,17 @@ public class Banque implements CommandExecutor, Listener {
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
-                        if (config.getInt(pId + ".banque", config.getInt(pId + ".banque")) >= nb) {
+                        if (nb > 0) {
+                            if (config.getInt(pId + ".banque", config.getInt(pId + ".banque")) >= nb) {
                                 player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
                                 config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
                                 main.saveConfig();
                                 sender.sendMessage("Vous avez bien retiré " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
+                            } else {
+                                player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants en banque");
+                            }
                         } else {
-                            player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants en banque");
+                            player.sendMessage(config.getString("erreur") + "Vous ne pouvez pas retirer un nombre négatif (petit malin)");
                         }
                     } catch (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
@@ -74,19 +78,22 @@ public class Banque implements CommandExecutor, Listener {
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
-                        if (player.getInventory().contains(new ItemStack(Material.DIAMOND, nb), 1)) {
-                            if (nb <= 64) {
-                                player.getInventory().remove(new ItemStack(Material.DIAMOND, nb));
+                        if (nb > 0) {
+                            if (player.getInventory().contains(Material.DIAMOND, nb)) {
+                                for (int i = 0; i < nb; i++) {
+                                    player.getInventory().removeItemAnySlot(new ItemStack(Material.DIAMOND));
+                                }
                                 config.set(pId + ".banque", config.getInt(pId + ".banque") + nb);
                                 main.saveConfig();
                                 sender.sendMessage("Vous avez bien déposé " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
                             } else {
-                                player.sendMessage(config.getString("erreur") + "Vous ne pouvez déposer que 64 diamants en une fois");
+                                player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants dans votre inventaire");
                             }
                         } else {
-                            player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants dans votre inventaire");
+                            player.sendMessage(config.getString("erreur") + "Vous ne pouvez pas déposer un nombre négatif (c'est un peu con)");
                         }
-                    } catch (NumberFormatException e) {
+                    } catch
+                    (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
                     }
                 }
@@ -97,14 +104,18 @@ public class Banque implements CommandExecutor, Listener {
                 } else {
                     try {
                         int nb = Integer.parseInt(args[1]); //test si c'est un chiffre
-                        if (config.getInt(pId + ".banque") >= nb) {
-                            UUID reciever = Bukkit.getPlayerUniqueId(args[0]);
-                            config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
-                            config.set(reciever + ".banque", config.getInt(reciever + ".banque") + nb);
-                            main.saveConfig();
-                            sender.sendMessage("Vous avez bien envoyé " + config.getString("important") + args[1] + config.getString("normal") + " diamants à " + config.getString("important") + args[0]);
+                        if (nb > 0) {
+                            if (config.getInt(pId + ".banque") >= nb) {
+                                UUID reciever = Bukkit.getPlayerUniqueId(args[0]);
+                                config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
+                                config.set(reciever + ".banque", config.getInt(reciever + ".banque") + nb);
+                                main.saveConfig();
+                                sender.sendMessage("Vous avez bien envoyé " + config.getString("important") + args[1] + config.getString("normal") + " diamants à " + config.getString("important") + args[0]);
+                            } else {
+                                player.sendMessage("Vous n'avez pas assez de diamants sur votre compte");
+                            }
                         } else {
-                            player.sendMessage("Vous n'avez pas assez de diamants sur votre compte");
+                            player.sendMessage(config.getString("erreur") + "Vous ne pouvez pas donner un nombre négatif (espèce de voleur)");
                         }
                     } catch (NumberFormatException e) {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");

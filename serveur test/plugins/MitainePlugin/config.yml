@@ -15,11 +15,11 @@ spawnPoint:
 
 # Infos de la Mairie
 mairie:
-  banque: 40
+  banque: 46
 
 # Les Joueurs et leur data
 95f08a24-a484-4771-bf43-e3e2817b74f3:
-  banque: 44
+  banque: 70
   courriers:
     nombre: 4
     '1':
@@ -38,39 +38,8 @@ mairie:
       date: 01-04-2024 à 18:52:19
       sender: §f[§3Mitaine§f]§6 Admin
       message: Le message envoyé à §6Skyspirit§f a bien été ouvert.
-  teleports:
-    home:
-      world: world
-      x: 50
-      y: 100
-      z: 50
-    spawn:
-      world: world
-      x: 29
-      y: 69
-      z: 108
-    neth:
-      world: world_nether
-      x: -21
-      y: 59
-      z: 19
-    test:
-      world: world
-      x: 35
-      y: 70
-      z: 94
-    loin:
-      world: world
-      x: -227
-      y: 68
-      z: 132
-    village:
-      world: world
-      x: 55
-      y: 69
-      z: 132
 b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
-  banque: 7
+  banque: 87
   courriers:
     nombre: 2
     '1':
@@ -82,3 +51,13 @@ b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
       sender: Skyspirit
       idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
       message: 'test '
+f3bb5e10-94da-4dda-88b0-595305de7a0e:
+  banque: 0
+  courriers:
+    nombre: 0
+820e66fe-2148-4b56-ae48-252a829a0927:
+  courriers:
+    nombre: 0
+ad583e58-a368-4b56-acb6-f3c691f66061:
+  courriers:
+    nombre: 0

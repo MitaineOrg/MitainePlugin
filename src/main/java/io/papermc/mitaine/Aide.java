@@ -9,7 +9,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -31,6 +30,7 @@ public class Aide implements CommandExecutor, TabCompleter {
                 message.append(config.getString("important"))
                         .append("/")
                         .append(commande)
+                        .append(" ")
                         .append(config.getString("normal"))
                         .append(Objects.requireNonNull(Bukkit.getPluginCommand(commande)).getDescription())
                         .append(config.getString("discret"))
