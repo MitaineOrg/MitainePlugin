@@ -171,6 +171,8 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         }
                     }
                     return true;
+                } else {
+                    sender.sendMessage(config.getString("erreur") + "Les options sont : /courrier <liste | envoyer | lire | supprimer>");
                 }
 
             } else {
