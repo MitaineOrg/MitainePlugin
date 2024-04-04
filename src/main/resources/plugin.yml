@@ -41,6 +41,7 @@ commands:
     permission: leaderboard.use
     aliases: [top]
 
+  #Mairie
   mairie:
     description: Permet d'accéder aux commandes du maire
     permission: mairie.use
