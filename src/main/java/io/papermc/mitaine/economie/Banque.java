@@ -49,7 +49,6 @@ public class Banque implements CommandExecutor, Listener {
                 if (args.length != 1) {
                     player.sendMessage(config.getString("erreur") + "la commande est /economie retirer <montant>");
                 } else if (player.getInventory().firstEmpty() == -1) {
-                    //faire le test des diamants dispos
                     player.sendMessage(config.getString("erreur") + "vous n'avez plus de place dans votre inventaire");
                 } else {
                     try {
@@ -121,6 +120,7 @@ public class Banque implements CommandExecutor, Listener {
                         player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
                     }
                 }
+                return true;
             }
         }
         return false;

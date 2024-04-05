@@ -10,7 +10,6 @@ import io.papermc.mitaine.teleport.Teleport;
 import io.papermc.mitaine.vote.Vote;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.checkerframework.checker.units.qual.A;
 
 public final class MitaineMain extends JavaPlugin {
 
