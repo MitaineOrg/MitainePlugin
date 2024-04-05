@@ -111,7 +111,7 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
     private void delTeleport(Player player, String emplacement) {
         FileConfiguration config = main.getConfig();
         if (config.getString(emplacement + ".world") == null) {
-            player.sendMessage("Le point de téléportaion n'existe pas");
+            player.sendMessage(config.getString("erreur") + "Le point de téléportaion n'existe pas");
         } else {
             config.set(emplacement, null);
             main.saveConfig();

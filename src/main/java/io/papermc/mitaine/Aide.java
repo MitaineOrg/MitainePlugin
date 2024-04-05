@@ -24,7 +24,7 @@ public class Aide implements CommandExecutor, TabCompleter {
 
         if (cmd.getName().equalsIgnoreCase("aide")) {
             FileConfiguration config = main.getConfig();
-            String[] commandes = {"courrier","banque","retirer","deposer","donner","icone","leaderboard","mairie","reward","spawn","sethome","home","vote","aide"};
+            String[] commandes = {"courrier","banque","retirer","deposer","donner","icone","leaderboard","mairie","reward","spawn","sethome", "delhome","home","vote","aide"};
             StringBuilder message = new StringBuilder();
             for (String commande : commandes) {
                 message.append(config.getString("important"))

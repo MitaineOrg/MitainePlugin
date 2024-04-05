@@ -4,7 +4,7 @@ import io.papermc.mitaine.courrier.Courrier;
 import io.papermc.mitaine.economie.Achat;
 import io.papermc.mitaine.economie.Banque;
 import io.papermc.mitaine.economie.Leaderboard;
-import io.papermc.mitaine.economie.Mairie;
+import io.papermc.mitaine.mairie.Mairie;
 import io.papermc.mitaine.reward.Reward;
 import io.papermc.mitaine.teleport.Teleport;
 import io.papermc.mitaine.vote.Vote;

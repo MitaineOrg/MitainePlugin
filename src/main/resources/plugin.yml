@@ -10,82 +10,111 @@ commands:
   #Courrier
   courrier:
     description: Permet une gestion des courriers
-    permission: courrier.use
+    permission: mitaine.courrier
     aliases: [mail]
 
   #Economie
   banque:
     description: Permet une gestion d'afficher son compte
-    permission: banque.use
+    permission: mitaine.banque
     aliases: [bank, solde]
   retirer:
     description: Retirer de l'argent de son compte
-    permission: retirer.use
+    permission: mitaine.retirer
     aliases: [pull]
   deposer:
     description: Déposer de l'argent sur son compte
-    permission: deposer.use
+    permission: mitaine.deposer
     aliases: [push]
   donner:
     description: Donner de l'argent à un joueur
-    permission: donner.use
+    permission: mitaine.donner
     aliases: [pay, payer]
 
   icone:
     description: Définit un icone à l'endroit du joueur sur la dynmap
-    permission: achetericone.use
+    permission: mitaine.icone
     aliases: [achetericone]
 
   leaderboard:
     description: Afficher les plus riches du serveur
-    permission: leaderboard.use
+    permission: mitaine.leaderboard
     aliases: [top]
 
   #Mairie
   mairie:
     description: Permet d'accéder aux commandes du maire
-    permission: mairie.use
+    permission: mitaine.mairie
 
   #Reward
   reward:
     description: Récupérer son reward du jour
-    permission: reward.use
+    permission: mitaine.reward
     aliases: [daily]
 
   #Teleport
   spawn:
     description: Se téléporter au spawn
-    permission: spawn.use
+    permission: mitaine.spawn
   setspawn:
     description: Définir le point spawn
-    permission: setspawn.use
+    permission: mitaine.setspawn
   home:
-    description: Se téléporter à sa base
-    permission: home.use
+    description: Se téléporter à un home
+    permission: mitaine.home
   sethome:
-    description: Définir le point base
-    permission: sethome.use
+    description: Définir un point de home
+    permission: mitaine.sethome
   delhome:
-    description: Définir le point base
-    permission: sethome.use
+    description: Supprimer un point de home
+    permission: mitaine.delhome
+    aliases: [supprhome]
   delspawn:
-    description: Définir le point base
-    permission: sethome.use
+    description: Supprimer le point spawn
+    permission: mitaine.delspawn
 
   #Vote
   vote:
     description: Voter lors d'un vote
-    permission: vote.use
+    permission: mitaine.vote
     aliases: [voter]
   creervote:
     description: Créer un vote
-    permission: creervote.use
+    permission: mitaine.creervote
   resultats:
     description: Afficher les résultats du dernier vote
-    permission: resultats.use
+    permission: mitaine.resultats
 
   #Aide
   aide:
     description: Aide pour mitaine
-    permission: aide.use
+    permission: mitaine.aide
     aliases: [mitaine]
+
+permissions:
+  mitaine.courrier:
+    default: true
+  mitaine.banque:
+    default: true
+  mitaine.retirer:
+    default: true
+  mitaine.deposer:
+    default: true
+  mitaine.donner:
+    default: true
+  mitaine.leaderboard:
+    default: true
+  mitaine.mairie:
+    default: true
+  mitaine.spawn:
+    default: true
+  mitaine.home:
+    default: true
+  mitaine.sethome:
+    default: true
+  mitaine.delhome:
+    default: true
+  mitaine.vote:
+    default: true
+  mitaine.aide:
+    default: true

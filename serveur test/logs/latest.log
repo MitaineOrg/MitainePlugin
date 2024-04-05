@@ -1,487 +1,119 @@
-[22:05:25] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-java.lang.RuntimeException: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.Main.main(Main.java:131) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.Main.main(Main.java:326) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:39) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 20 more
-Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
- in 'reader', line 48, column 3:
-      setmaire
-      ^
-could not find expected ':'
- in 'reader', line 50, column 3:
-      #Reward
-      ^
-
-	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:502) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:307) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:237) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:637) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:178) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:493) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.load(Yaml.java:434) ~[snakeyaml-2.2.jar:?]
-	at org.bukkit.plugin.PluginDescriptionFile.<init>(PluginDescriptionFile.java:328) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:37) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 20 more
-[22:05:28] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22:05:30] [ServerMain/INFO]: Loaded 1298 recipes
-[22:05:30] [ServerMain/INFO]: Loaded 1395 advancements
-[22:05:30] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[22:05:30] [Server thread/INFO]: Loading properties
-[22:05:30] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[22:05:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:05:31] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:05:31] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[20:14:15] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:14:16] [ServerMain/INFO]: Loaded 1298 recipes
+[20:14:17] [ServerMain/INFO]: Loaded 1395 advancements
+[20:14:17] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[20:14:17] [Server thread/INFO]: Loading properties
+[20:14:17] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
+[20:14:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:14:18] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:14:18] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[22:05:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[22:05:31] [Server thread/INFO]: Default game type: SURVIVAL
-[22:05:31] [Server thread/INFO]: Generating keypair
-[22:05:31] [Server thread/INFO]: Starting Minecraft server on *:25565
-[22:05:31] [Server thread/INFO]: Using default channel type
-[22:05:31] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[22:05:31] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[22:05:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:05:31] [Server thread/INFO]: Preparing level "world"
-[22:05:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:05:32] [Server thread/INFO]: Time elapsed: 254 ms
-[22:05:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[22:05:32] [Server thread/INFO]: Time elapsed: 22 ms
-[22:05:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[22:05:32] [Server thread/INFO]: Time elapsed: 18 ms
-[22:05:32] [Server thread/INFO]: Running delayed init tasks
-[22:05:32] [Server thread/INFO]: Done (2.131s)! For help, type "help"
-[22:05:32] [Server thread/INFO]: Timings Reset
-[22:08:24] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[22:08:24] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[22:08:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:08:24] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:08:24] [Server thread/INFO]: Loaded 1298 recipes
-[22:08:24] [Server thread/INFO]: Loaded 1395 advancements
-[22:08:25] [Server thread/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-java.lang.RuntimeException: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.PluginInitializerManager.reload(PluginInitializerManager.java:112) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.reload(CraftServer.java:1094) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1004) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:972) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:500) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1515) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:39) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 29 more
-Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
- in 'reader', line 48, column 3:
-      setmaire
-      ^
-could not find expected ':'
- in 'reader', line 50, column 3:
-      #Reward
-      ^
+[20:14:18] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[20:14:18] [Server thread/INFO]: Default game type: SURVIVAL
+[20:14:18] [Server thread/INFO]: Generating keypair
+[20:14:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:14:18] [Server thread/INFO]: Using default channel type
+[20:14:18] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[20:14:18] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[20:14:18] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[20:14:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:14:18] [Server thread/INFO]: Preparing level "world"
+[20:14:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:14:19] [Server thread/INFO]: Time elapsed: 230 ms
+[20:14:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:14:19] [Server thread/INFO]: Time elapsed: 20 ms
+[20:14:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:14:19] [Server thread/INFO]: Time elapsed: 29 ms
+[20:14:19] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[20:14:19] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[20:14:19] [Server thread/INFO]: Running delayed init tasks
+[20:14:19] [Server thread/INFO]: Done (2.260s)! For help, type "help"
+[20:14:19] [Server thread/INFO]: Timings Reset
+[20:14:21] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[20:14:21] [Server thread/INFO]: Skyspirit joined the game
+[20:14:21] [Server thread/INFO]: Skyspirit[/127.0.0.1:54770] logged in with entity id 408 at ([world]72.65043505478924, 73.0, 27.698851626337948)
+[20:14:25] [Server thread/INFO]: Skyspirit issued server command: /deop Skyspirit
+[20:14:25] [Server thread/INFO]: [Skyspirit: Made Skyspirit no longer a server operator]
+[20:14:27] [Server thread/INFO]: Skyspirit issued server command: /aide
+[20:16:46] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[20:16:51] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[20:16:51] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[20:16:51] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:16:51] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:16:51] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[20:16:51] [Server thread/INFO]: Au revoir
+[20:16:51] [Server thread/INFO]: Loaded 1298 recipes
+[20:16:51] [Server thread/INFO]: Loaded 1395 advancements
+[20:16:51] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[20:16:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:16:51] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[20:16:51] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[20:16:51] [Server thread/INFO]: CONSOLE: Reload complete.
+[20:16:51] [Server thread/INFO]: Timings Reset
+[20:16:53] [Server thread/INFO]: /courrier Permet une gestion des courriers aliases : [mail]
+/banque Permet une gestion d'afficher son compte aliases : [bank, solde]
+/retirer Retirer de l'argent de son compte aliases : [pull]
+/deposer Déposer de l'argent sur son compte aliases : [push]
+/donner Donner de l'argent à un joueur aliases : [pay, payer]
+/icone Définit un icone à l'endroit du joueur sur la dynmap aliases : [achetericone]
+/leaderboard Afficher les plus riches du serveur aliases : [top]
+/mairie Permet d'accéder aux commandes du maire aliases : []
+/reward Récupérer son reward du jour aliases : [daily]
+/spawn Se téléporter au spawn aliases : []
+/sethome Définir un point de home aliases : []
+/delhome Supprimer un point de home aliases : [supprhome]
+/home Se téléporter à un home aliases : []
+/vote Voter lors d'un vote aliases : [voter]
+/aide Aide pour mitaine aliases : [mitaine]
 
-	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:502) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:307) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:237) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:637) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:178) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:493) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.load(Yaml.java:434) ~[snakeyaml-2.2.jar:?]
-	at org.bukkit.plugin.PluginDescriptionFile.<init>(PluginDescriptionFile.java:328) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:37) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 29 more
-[22:08:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:08:25] [Server thread/INFO]: CONSOLE: Reload complete.
-[22:08:25] [Server thread/INFO]: Timings Reset
-[22:11:56] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[22:11:56] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[22:11:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:11:56] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:11:57] [Server thread/INFO]: Loaded 1298 recipes
-[22:11:57] [Server thread/INFO]: Loaded 1395 advancements
-[22:11:57] [Server thread/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-java.lang.RuntimeException: Directory 'plugins\mitaine-1.0-SNAPSHOT.jar' failed to load!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.PluginInitializerManager.reload(PluginInitializerManager.java:112) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.reload(CraftServer.java:1094) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1004) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:972) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:500) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1515) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:39) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 29 more
-Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
- in 'reader', line 48, column 3:
-      setmaire
-      ^
-could not find expected ':'
- in 'reader', line 50, column 3:
-      #Reward
-      ^
-
-	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:502) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:307) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:237) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:637) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:178) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:493) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.load(Yaml.java:434) ~[snakeyaml-2.2.jar:?]
-	at org.bukkit.plugin.PluginDescriptionFile.<init>(PluginDescriptionFile.java:328) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:37) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.create(SpigotPluginProviderFactory.java:16) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.getConfig(PluginFileType.java:77) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:70) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.4.jar:git-Paper-401]
-	... 29 more
-[22:11:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:11:57] [Server thread/INFO]: CONSOLE: Reload complete.
-[22:11:57] [Server thread/INFO]: Timings Reset
-[22:13:54] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[22:13:54] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[22:13:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:13:54] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:13:55] [Server thread/INFO]: Loaded 1298 recipes
-[22:13:55] [Server thread/INFO]: Loaded 1395 advancements
-[22:13:55] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:13:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:13:55] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:13:55] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:13:55] [Server thread/INFO]: CONSOLE: Reload complete.
-[22:13:55] [Server thread/INFO]: Timings Reset
-[22:14:05] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:14:21] [Server thread/INFO]: Unknown or incomplete command, see below for error
-ban<--[HERE]
-[22:15:09] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[22:15:10] [Server thread/INFO]: Skyspirit joined the game
-[22:15:10] [Server thread/INFO]: Skyspirit[/127.0.0.1:62139] logged in with entity id 413 at ([world]68.3360437239756, 74.63897538292993, 23.357535406882537)
-[22:15:14] [Server thread/INFO]: Skyspirit issued server command: /mairie
-[22:15:14] [Server thread/ERROR]: null
-org.bukkit.command.CommandException: Unhandled exception executing command 'mairie' in plugin MitainePlugin v1.0.0
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at io.papermc.mitaine.mairie.Mairie.onCommand(Mairie.java:35) ~[mitaine-1.0-SNAPSHOT.jar:?]
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	... 29 more
-[22:23:11] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:23:11] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:23:11] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:23:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:23:11] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:23:11] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:23:11] [Server thread/INFO]: Au revoir
-[22:23:12] [Server thread/INFO]: Loaded 1298 recipes
-[22:23:12] [Server thread/INFO]: Loaded 1395 advancements
-[22:23:12] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:23:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:23:12] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:23:12] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:23:12] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:23:12] [Server thread/INFO]: Timings Reset
-[22:23:14] [Server thread/INFO]: Skyspirit issued server command: /mairie
-[22:23:53] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:23:53] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:23:53] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:23:53] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:23:53] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:23:53] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:23:53] [Server thread/INFO]: Au revoir
-[22:23:53] [Server thread/INFO]: Loaded 1298 recipes
-[22:23:53] [Server thread/INFO]: Loaded 1395 advancements
-[22:23:53] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:23:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:23:53] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:23:53] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:23:53] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:23:53] [Server thread/INFO]: Timings Reset
-[22:24:10] [Server thread/INFO]: Skyspirit issued server command: /mairie banque
-[22:25:00] [Server thread/INFO]: Skyspirit issued server command: /mairie banque
-[22:25:08] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:25:08] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:25:08] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:25:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:25:08] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:25:08] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:25:08] [Server thread/INFO]: Au revoir
-[22:25:08] [Server thread/INFO]: Loaded 1298 recipes
-[22:25:08] [Server thread/INFO]: Loaded 1395 advancements
-[22:25:08] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:25:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:25:08] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:25:08] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:25:08] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:25:08] [Server thread/INFO]: Timings Reset
-[22:25:10] [Server thread/INFO]: Skyspirit issued server command: /mairie banque
-[22:25:14] [Server thread/INFO]: Skyspirit issued server command: /banque
-[22:25:25] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer Skyspirit
-[22:25:30] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer 2
-[22:25:32] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer 2
-[22:25:35] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer 21
-[22:26:24] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:26:24] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:26:24] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:26:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:26:24] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:26:24] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:26:24] [Server thread/INFO]: Au revoir
-[22:26:24] [Server thread/INFO]: Loaded 1298 recipes
-[22:26:24] [Server thread/INFO]: Loaded 1395 advancements
-[22:26:24] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:26:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:26:24] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:26:24] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:26:24] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:26:24] [Server thread/INFO]: Timings Reset
-[22:26:33] [Server thread/INFO]: Skyspirit issued server command: /mairie banque
-[22:26:37] [Server thread/INFO]: Skyspirit issued server command: /mairie bank
-[22:26:40] [Server thread/INFO]: Skyspirit issued server command: /mairie fgga
-[22:26:45] [Server thread/INFO]: Skyspirit issued server command: /mairie deposer
-[22:26:49] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer
-[22:26:54] [Server thread/INFO]: Skyspirit issued server command: /mairie Skyspirit
-[22:26:57] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer 20
-[22:26:57] [Server thread/INFO]: Skyspirit has made the advancement [Diamonds!]
-[22:27:02] [Server thread/INFO]: Skyspirit issued server command: /mairie deposer 4
-[22:27:04] [Server thread/INFO]: Skyspirit issued server command: /mairie deposer 40
-[22:27:07] [Server thread/INFO]: Skyspirit issued server command: /mairie deposer -2
-[22:27:14] [Server thread/INFO]: Skyspirit issued server command: /mairie deposer 16
-[22:27:19] [Server thread/INFO]: Skyspirit issued server command: /mairie retirer -3
-[22:27:26] [Server thread/INFO]: Skyspirit issued server command: /mairie setmaire Hybanos
-[22:27:40] [Server thread/INFO]: Skyspirit issued server command: /mairie setmaire Skyspirit
-[22:29:23] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:29:23] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:29:23] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:29:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:29:23] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:29:23] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:29:23] [Server thread/INFO]: Au revoir
-[22:29:23] [Server thread/INFO]: Loaded 1298 recipes
-[22:29:23] [Server thread/INFO]: Loaded 1395 advancements
-[22:29:23] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:29:23] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:29:23] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:29:23] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:29:23] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:29:23] [Server thread/INFO]: Timings Reset
-[22:29:26] [Server thread/INFO]: Skyspirit issued server command: /mairie setmaire Skyspirit
-[22:29:50] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[22:29:50] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[22:29:50] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[22:29:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:29:50] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:29:51] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:29:51] [Server thread/INFO]: Au revoir
-[22:29:51] [Server thread/INFO]: Loaded 1298 recipes
-[22:29:51] [Server thread/INFO]: Loaded 1395 advancements
-[22:29:51] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[22:29:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:29:51] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[22:29:51] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[22:29:51] [Server thread/INFO]: Skyspirit: Reload complete.
-[22:29:51] [Server thread/INFO]: Timings Reset
-[22:34:14] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[22:34:14] [Server thread/INFO]: Skyspirit left the game
-[23:51:31] [Server thread/INFO]: Stopping the server
-[23:51:31] [Server thread/INFO]: Stopping server
-[23:51:31] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[23:51:31] [Server thread/INFO]: Au revoir
-[23:51:31] [Server thread/INFO]: Saving players
-[23:51:31] [Server thread/INFO]: Saving worlds
-[23:51:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 265 entity chunks, 0 poi chunks in world 'world' in 0,03s
-[23:51:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:51:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 108 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
-[23:51:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:51:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[23:51:31] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[23:51:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:51:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[23:51:31] [Server thread/INFO]: Flushing Chunk IO
-[23:51:31] [Server thread/INFO]: Closing Thread Pool
-[23:51:31] [Server thread/INFO]: Closing Server
+[20:16:55] [Server thread/INFO]: Skyspirit issued server command: /aide
+[20:21:47] [Server thread/INFO]: Skyspirit issued server command: /help Mitai
+[20:22:10] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[20:22:10] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[20:22:10] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:22:10] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:22:10] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[20:22:10] [Server thread/INFO]: Au revoir
+[20:22:11] [Server thread/INFO]: Loaded 1298 recipes
+[20:22:11] [Server thread/INFO]: Loaded 1395 advancements
+[20:22:11] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[20:22:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:22:11] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[20:22:11] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[20:22:11] [Server thread/INFO]: CONSOLE: Reload complete.
+[20:22:11] [Server thread/INFO]: Timings Reset
+[20:22:15] [Server thread/INFO]: Skyspirit issued server command: /help Mitai
+[20:22:18] [Server thread/INFO]: Skyspirit issued server command: /help MitainePlugin
+[20:22:22] [Server thread/INFO]: Skyspirit issued server command: /aide
+[20:22:29] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[20:23:17] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[20:23:17] [Server thread/INFO]: Skyspirit left the game
+[20:23:23] [Server thread/INFO]: Stopping the server
+[20:23:23] [Server thread/INFO]: Stopping server
+[20:23:23] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[20:23:23] [Server thread/INFO]: Au revoir
+[20:23:23] [Server thread/INFO]: Saving players
+[20:23:23] [Server thread/INFO]: Saving worlds
+[20:23:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saved 63 block chunks, 342 entity chunks, 0 poi chunks in world 'world' in 0,09s
+[20:23:23] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:23:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 112 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
+[20:23:23] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:23:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[20:23:23] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[20:23:23] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:23:23] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:23:23] [Server thread/INFO]: Flushing Chunk IO
+[20:23:23] [Server thread/INFO]: Closing Thread Pool
+[20:23:23] [Server thread/INFO]: Closing Server

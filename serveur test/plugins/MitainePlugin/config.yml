@@ -15,12 +15,12 @@ spawnPoint:
 
 # Infos de la Mairie
 mairie:
-  banque: 46
+  banque: 47
   maire: 95f08a24-a484-4771-bf43-e3e2817b74f3
 
 # Les Joueurs et leur data
 95f08a24-a484-4771-bf43-e3e2817b74f3:
-  banque: 70
+  banque: 69
   courriers:
     nombre: 5
     '1':
@@ -44,6 +44,7 @@ mairie:
       sender: Skyspirit
       idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
       message: 'test '
+  teleports: {}
 b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
   banque: 87
   courriers:
