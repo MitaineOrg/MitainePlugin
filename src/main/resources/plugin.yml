@@ -64,6 +64,12 @@ commands:
   sethome:
     description: Définir le point base
     permission: sethome.use
+  delhome:
+    description: Définir le point base
+    permission: sethome.use
+  delspawn:
+    description: Définir le point base
+    permission: sethome.use
 
   #Vote
   vote:

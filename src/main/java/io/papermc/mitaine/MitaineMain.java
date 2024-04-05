@@ -10,6 +10,7 @@ import io.papermc.mitaine.teleport.Teleport;
 import io.papermc.mitaine.vote.Vote;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.checkerframework.checker.units.qual.A;
 
 public final class MitaineMain extends JavaPlugin {
 
@@ -19,40 +20,51 @@ public final class MitaineMain extends JavaPlugin {
 
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
         //Courrier
-        getCommand("courrier").setExecutor(new Courrier(this));
-        getServer().getPluginManager().registerEvents(new Courrier(this), this);
+        Courrier courrier = new Courrier(this);
+        getCommand("courrier").setExecutor(courrier);
+        getServer().getPluginManager().registerEvents(courrier, this);
 
         //Economie
-        getCommand("banque").setExecutor(new Banque(this));
-        getCommand("donner").setExecutor(new Banque(this));
-        getCommand("retirer").setExecutor(new Banque(this));
-        getCommand("deposer").setExecutor(new Banque(this));
+        Banque banque = new Banque(this);
+        getCommand("banque").setExecutor(banque);
+        getCommand("donner").setExecutor(banque);
+        getCommand("retirer").setExecutor(banque);
+        getCommand("deposer").setExecutor(banque);
 
-        getCommand("icone").setExecutor(new Achat(this));
+        Achat achat = new Achat(this);
+        getCommand("icone").setExecutor(achat);
 
-        getCommand("leaderboard").setExecutor(new Leaderboard(this));
+        Leaderboard leaderboard = new Leaderboard(this);
+        getCommand("leaderboard").setExecutor(leaderboard);
 
-        getCommand("mairie").setExecutor(new Mairie(this));
-        getServer().getPluginManager().registerEvents(new Vote(this), this);
+        Mairie mairie = new Mairie(this);
+        getCommand("mairie").setExecutor(mairie);
 
         //Reward
-        getCommand("reward").setExecutor(new Reward(this));
-        getServer().getPluginManager().registerEvents(new Reward(this), this);
+        Reward reward = new Reward(this);
+        getCommand("reward").setExecutor(reward);
+        getServer().getPluginManager().registerEvents(reward, this);
 
         //Teleport
-        getCommand("setspawn").setExecutor(new Teleport(this));
-        getCommand("spawn").setExecutor(new Teleport(this));
-        getCommand("sethome").setExecutor(new Teleport(this));
-        getCommand("home").setExecutor(new Teleport(this));
+        Teleport teleport = new Teleport(this);
+        getCommand("setspawn").setExecutor(teleport);
+        getCommand("spawn").setExecutor(teleport);
+        getCommand("sethome").setExecutor(teleport);
+        getCommand("home").setExecutor(teleport);
+        getCommand("delhome").setExecutor(teleport);
+        getCommand("delspawn").setExecutor(teleport);
+        teleport.runTaskTimer(this, 0L, 1L);
 
         //Vote
-        getCommand("vote").setExecutor(new Vote(this));
-        getCommand("creervote").setExecutor(new Vote(this));
-        getCommand("resultats").setExecutor(new Vote(this));
-        getServer().getPluginManager().registerEvents(new Vote(this), this);
+        Vote vote = new Vote(this);
+        getCommand("vote").setExecutor(vote);
+        getCommand("creervote").setExecutor(vote);
+        getCommand("resultats").setExecutor(vote);
+        getServer().getPluginManager().registerEvents(vote, this);
 
         //Mitaine
-        getCommand("aide").setExecutor(new Aide(this));
+        Aide aide = new Aide(this);
+        getCommand("aide").setExecutor(aide);
     }
 
     @Override
