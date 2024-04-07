@@ -17,7 +17,13 @@ public final class MitaineMain extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
 
-        Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
+        Bukkit.getLogger().info("Merci d'utiliser Mitaine Plugin");
+
+        //Mitaine
+        Aide aide = new Aide(this);
+        getCommand("aide").setExecutor(aide);
+        getServer().getPluginManager().registerEvents(aide, this);
+
         //Courrier
         Courrier courrier = new Courrier(this);
         getCommand("courrier").setExecutor(courrier);
@@ -60,10 +66,6 @@ public final class MitaineMain extends JavaPlugin {
         getCommand("creervote").setExecutor(vote);
         getCommand("resultats").setExecutor(vote);
         getServer().getPluginManager().registerEvents(vote, this);
-
-        //Mitaine
-        Aide aide = new Aide(this);
-        getCommand("aide").setExecutor(aide);
     }
 
     @Override

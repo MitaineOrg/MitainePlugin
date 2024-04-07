@@ -1,21 +1,18 @@
 package io.papermc.mitaine.teleport;
 
 import io.papermc.mitaine.MitaineMain;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 
 import static java.lang.Math.*;
 
-import java.awt.desktop.SystemEventListener;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -98,6 +95,9 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
 
         double distance = sqrt(pow(player.getLocation().getBlockX() - tp.getBlockX(), 2) + pow(player.getLocation().getBlockZ() - tp.getBlockZ(), 2));
         int prix = (int) round(sqrt(distance) / 10 + 1);
+        if (player.getLocation().getWorld().getName().equalsIgnoreCase("world_nether")) {
+            prix *= 8;
+        }
         player.sendMessage("Vous êtes à " + config.getString("important") + round(distance) + config.getString("normal") + " blocs du point, cela vous coûtera " + config.getString("important") + prix + config.getString("normal") + " diamants");
 
         if (config.getInt(pId + ".banque") >= prix) {

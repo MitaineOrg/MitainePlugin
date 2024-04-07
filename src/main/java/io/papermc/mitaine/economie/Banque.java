@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -47,7 +48,7 @@ public class Banque implements CommandExecutor, Listener {
 
             } else if (cmd.getName().equalsIgnoreCase("retirer")) {
                 if (args.length != 1) {
-                    player.sendMessage(config.getString("erreur") + "la commande est /economie retirer <montant>");
+                    player.sendMessage(config.getString("erreur") + "la commande est /retirer <montant>");
                 } else if (player.getInventory().firstEmpty() == -1) {
                     player.sendMessage(config.getString("erreur") + "vous n'avez plus de place dans votre inventaire");
                 } else {
@@ -73,7 +74,7 @@ public class Banque implements CommandExecutor, Listener {
 
             } else if (cmd.getName().equalsIgnoreCase("deposer")) {
                 if (args.length != 1) {
-                    player.sendMessage(config.getString("erreur") + "la commande est /economie deposer <montant>");
+                    player.sendMessage(config.getString("erreur") + "la commande est /deposer <montant>");
                 } else {
                     try {
                         int nb = Integer.parseInt(args[0]); //test si c'est un chiffre
@@ -99,7 +100,7 @@ public class Banque implements CommandExecutor, Listener {
                 return true;
             } else if (cmd.getName().equalsIgnoreCase("donner")) {
                 if (args.length != 2) {
-                    player.sendMessage(config.getString("erreur") + "la commande est /economie donner <joueur> <montant>");
+                    player.sendMessage(config.getString("erreur") + "la commande est /donner <joueur> <montant>");
                 } else {
                     try {
                         int nb = Integer.parseInt(args[1]); //test si c'est un chiffre
@@ -110,6 +111,7 @@ public class Banque implements CommandExecutor, Listener {
                                 config.set(reciever + ".banque", config.getInt(reciever + ".banque") + nb);
                                 main.saveConfig();
                                 sender.sendMessage("Vous avez bien envoyé " + config.getString("important") + args[1] + config.getString("normal") + " diamants à " + config.getString("important") + args[0]);
+                                Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "courrier envoyer " + args[0] + " " + player.getName() + " Vous a envoyé " + args[1] + " diamants");
                             } else {
                                 player.sendMessage("Vous n'avez pas assez de diamants sur votre compte");
                             }

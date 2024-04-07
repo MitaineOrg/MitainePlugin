@@ -94,6 +94,7 @@ commands:
 permissions:
   mitaine.courrier:
     default: true
+
   mitaine.banque:
     default: true
   mitaine.retirer:
@@ -102,10 +103,16 @@ permissions:
     default: true
   mitaine.donner:
     default: true
+
   mitaine.leaderboard:
     default: true
+
   mitaine.mairie:
     default: true
+
+  mitaine.reward:
+    default: true
+
   mitaine.spawn:
     default: true
   mitaine.home:
@@ -114,7 +121,9 @@ permissions:
     default: true
   mitaine.delhome:
     default: true
+
   mitaine.vote:
     default: true
+    
   mitaine.aide:
     default: true

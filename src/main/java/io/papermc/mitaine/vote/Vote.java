@@ -47,31 +47,28 @@ public class Vote implements CommandExecutor, Listener {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, String[] args) {
 
-        if (sender instanceof Player player) {
-
-            UUID pId = player.getUniqueId();
-
-            if (cmd.getName().equalsIgnoreCase("creervote")) {
-                FileConfiguration config = main.getConfig();
-                if (args.length > 1) {
+        FileConfiguration config = main.getConfig();
+        if (cmd.getName().equalsIgnoreCase("creervote")) {
+            if (args.length > 1) {
+                votes.add(0);
+                for (String choix : args) {
+                    nb_choix++;
+                    bc.append("- ").append(config.getString("important")).append(nb_choix).append(config.getString("normal")).append(" pour ").append(choix).append("\n"); // Ajouter voter cliquable
                     votes.add(0);
-                    for (String choix : args) {
-                        nb_choix++;
-                        bc.append("- ").append(config.getString("important")).append(nb_choix).append(config.getString("normal")).append(" pour ").append(choix).append("\n"); // Ajouter voter cliquable
-                        votes.add(0);
-                    }
-                    for (Player p : Bukkit.getOnlinePlayers()) {
-                        p.sendMessage(config.getString("titre") + " Un vote est en cours, faites " + config.getString("important") + "/vote" + config.getString("normal") + " pour voter.\n" + bc);
-                        barVote.addPlayer(p);
-                    }
-                    barVote.setProgress(1.0);
-                } else {
-                    player.sendMessage(config.getString("erreur") + " La commande est : /creervote <choix 1> ... <choix n>");
                 }
-                return true;
+                for (Player p : Bukkit.getOnlinePlayers()) {
+                    p.sendMessage(config.getString("titre") + " Un vote est en cours, faites " + config.getString("important") + "/vote" + config.getString("normal") + " pour voter.\n" + bc);
+                    barVote.addPlayer(p);
+                }
+                barVote.setProgress(1.0);
+            } else {
+                sender.sendMessage(config.getString("erreur") + " La commande est : /creervote <choix 1> ... <choix n>");
+            }
+            return true;
 
-            } else if (cmd.getName().equalsIgnoreCase("vote")) {
-                FileConfiguration config = main.getConfig();
+        } else if (cmd.getName().equalsIgnoreCase("vote")) {
+            if (sender instanceof Player player) {
+                UUID pId = player.getUniqueId();
                 if (args.length == 1 && !votants.contains(pId)) {
                     if (nb_choix == 0) {
                         player.sendMessage(config.getString("titre") + " Il n'y a pas de vote en cours");
@@ -97,41 +94,40 @@ public class Vote implements CommandExecutor, Listener {
                     }
                 }
                 return true;
-
-            } else if (cmd.getName().equalsIgnoreCase("resultats")) {
-                FileConfiguration config = main.getConfig();
-                if (nb_choix == 0) {
-                    player.sendMessage(config.getString("titre") + " Il n'y a pas de vote pour le moment");
-                } else {
-                    StringBuilder res = new StringBuilder();
-                    for (int i = 1; i <= nb_choix; i++) {
-                        res.append("- ").append(config.getString("important")).append(votes.get(i)).append(config.getString("normal")).append(" pour le vote ").append(i).append("\n");
-                    }
-                    player.sendMessage(config.getString("titre") + " Le résultat du vote est :\n" + res);
-                    int idMax = 0;
-                    int sum = 0;
-                    for (int v = 0; v < votes.size(); v++) {
-                        sum += votes.get(v);
-                        if (votes.get(v) > votes.get(idMax)) {
-                            idMax = v;
-                        }
-                    }
-                    if (sum != 0) {
-                        String message = config.getString("titre") + " Le choix " + config.getString("important") + "n°" + idMax + config.getString("normal") + " remporte le vote avec " + config.getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + config.getString("normal") + " des voix";
-                        for (Player p : Bukkit.getOnlinePlayers()) {
-                            p.sendMessage(message);
-                        }
-                    } else {
-                        player.sendMessage(config.getString("erreur") + "  Il n'y a eu aucun vote");
-                    }
-                    nb_choix = 0;
-                    votes.clear();
-                    votants.clear();
-                    barVote.removeAll();
-                    bc.delete(0, bc.length());
-                }
-                return true;
             }
+
+        } else if (cmd.getName().equalsIgnoreCase("resultats")) {
+            if (nb_choix == 0) {
+                sender.sendMessage(config.getString("titre") + " Il n'y a pas de vote pour le moment");
+            } else {
+                StringBuilder res = new StringBuilder();
+                for (int i = 1; i <= nb_choix; i++) {
+                    res.append("- ").append(config.getString("important")).append(votes.get(i)).append(config.getString("normal")).append(" pour le vote ").append(i).append("\n");
+                }
+                sender.sendMessage(config.getString("titre") + " Le résultat du vote est :\n" + res);
+                int idMax = 0;
+                int sum = 0;
+                for (int v = 0; v < votes.size(); v++) {
+                    sum += votes.get(v);
+                    if (votes.get(v) > votes.get(idMax)) {
+                        idMax = v;
+                    }
+                }
+                if (sum != 0) {
+                    String message = config.getString("titre") + " Le choix " + config.getString("important") + "n°" + idMax + config.getString("normal") + " remporte le vote avec " + config.getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + config.getString("normal") + " des voix";
+                    for (Player p : Bukkit.getOnlinePlayers()) {
+                        p.sendMessage(message);
+                    }
+                } else {
+                    sender.sendMessage(config.getString("erreur") + "  Il n'y a eu aucun vote");
+                }
+                nb_choix = 0;
+                votes.clear();
+                votants.clear();
+                barVote.removeAll();
+                bc.delete(0, bc.length());
+            }
+            return true;
         }
         return false;
     }

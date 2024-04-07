@@ -27,7 +27,6 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
     @EventHandler
     public void onJoin(PlayerJoinEvent join) {
         Player player = join.getPlayer();
-        main.reloadConfig();
         FileConfiguration config = main.getConfig();
         String nombre = config.getString(player.getUniqueId() + ".courriers.nombre");
         if (nombre == null) {
@@ -56,23 +55,20 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             contenu.append(args[i]).append(" ");
                         }
                         String nameSender;
-                        UUID idSender = null;
-                        if (sender instanceof Player player) {
-                            nameSender = player.getName();
-                            idSender = player.getUniqueId();
-                        } else {
-                            nameSender = config.getString("titre") + config.getString("important") + " Admin";
-                        }
                         String nombre = config.getString(reciever + ".courriers.nombre");
                         int nbMsg = 1;
                         if (nombre != null) {
                             nbMsg += Integer.parseInt(nombre);
                         }
+                        if (sender instanceof Player player) {
+                            nameSender = player.getName();
+                            config.set(reciever + ".courriers." + nbMsg + ".idSender", player.getUniqueId().toString());
+                        } else {
+                            nameSender = config.getString("titre") + config.getString("important") + " Admin";
+                        }
                         config.set(reciever + ".courriers.nombre", nbMsg);
                         config.set(reciever + ".courriers." + nbMsg + ".date", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")));
                         config.set(reciever + ".courriers." + nbMsg + ".sender", nameSender);
-                        assert idSender != null;
-                        config.set(reciever + ".courriers." + nbMsg + ".idSender", idSender.toString());
                         config.set(reciever + ".courriers." + nbMsg + ".message", contenu.toString());
                         main.saveConfig();
                         try {
