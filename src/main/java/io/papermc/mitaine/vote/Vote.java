@@ -16,6 +16,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.jetbrains.annotations.NotNull;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -102,7 +103,13 @@ public class Vote implements CommandExecutor, Listener {
             } else {
                 StringBuilder res = new StringBuilder();
                 for (int i = 1; i <= nb_choix; i++) {
-                    res.append("- ").append(config.getString("important")).append(votes.get(i)).append(config.getString("normal")).append(" pour le vote ").append(i).append("\n");
+                    res.append("- ")
+                            .append(config.getString("important"))
+                            .append(votes.get(i))
+                            .append(config.getString("normal"))
+                            .append(" pour le vote ")
+                            .append(i)
+                            .append("\n");
                 }
                 sender.sendMessage(config.getString("titre") + " Le résultat du vote est :\n" + res);
                 int idMax = 0;
@@ -114,7 +121,8 @@ public class Vote implements CommandExecutor, Listener {
                     }
                 }
                 if (sum != 0) {
-                    String message = config.getString("titre") + " Le choix " + config.getString("important") + "n°" + idMax + config.getString("normal") + " remporte le vote avec " + config.getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + config.getString("normal") + " des voix";
+                    DecimalFormat df = new DecimalFormat("#.#");
+                    String message = config.getString("titre") + " Le choix " + config.getString("important") + "n°" + idMax + config.getString("normal") + " remporte le vote avec " + config.getString("important") + df.format((double) 100 * votes.get(idMax) / sum) + "%" + config.getString("normal") + " des voix";
                     for (Player p : Bukkit.getOnlinePlayers()) {
                         p.sendMessage(message);
                     }

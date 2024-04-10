@@ -49,7 +49,7 @@ public class Mairie implements CommandExecutor, TabCompleter {
                                             player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
                                             config.set("mairie.banque", config.getInt("mairie.banque") - nb);
                                             main.saveConfig();
-                                            sender.sendMessage("Vous avez bien retiré " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
+                                            sender.sendMessage("Vous avez bien retiré " + config.getString("important") + args[1] + config.getString("normal") + " diamants");
                                         } else {
                                             player.sendMessage(config.getString("erreur") + "La mairie pas assez de diamants en banque");
                                         }
@@ -74,7 +74,7 @@ public class Mairie implements CommandExecutor, TabCompleter {
                                             }
                                             config.set("mairie.banque", config.getInt("mairie.banque") + nb);
                                             main.saveConfig();
-                                            sender.sendMessage("Vous avez bien déposé " + config.getString("important") + args[0] + config.getString("normal") + " diamants");
+                                            sender.sendMessage("Vous avez bien déposé " + config.getString("important") + args[1] + config.getString("normal") + " diamants");
                                         } else {
                                             player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants dans votre inventaire");
                                         }

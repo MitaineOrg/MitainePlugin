@@ -32,8 +32,14 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         if (nombre == null) {
             config.set(player.getUniqueId() + ".courriers.nombre", 0);
             main.saveConfig();
+        } else {
+            try {
+                if (Integer.parseInt(nombre) >= 1) {
+                    player.sendMessage("Vous avez " + config.getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + config.getString("normal") + " courriers en attente");
+                }
+            } catch (NumberFormatException ignored) {
+            }
         }
-        player.sendMessage("Vous avez " + config.getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + config.getString("normal") + " courriers en attente");
     }
 
     @Override
@@ -64,7 +70,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             nameSender = player.getName();
                             config.set(reciever + ".courriers." + nbMsg + ".idSender", player.getUniqueId().toString());
                         } else {
-                            nameSender = config.getString("titre") + config.getString("important") + " Admin";
+                            nameSender = config.getString("titre") + config.getString("important") + " Info";
                         }
                         config.set(reciever + ".courriers.nombre", nbMsg);
                         config.set(reciever + ".courriers." + nbMsg + ".date", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")));
@@ -126,7 +132,8 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                                 config.set(idSender + ".courriers." + nbMsg + ".message", "Le message envoyé à " + config.getString("important") + player.getName() + config.getString("normal") + " a bien été ouvert.");
                                 try {
                                     Objects.requireNonNull(Bukkit.getPlayer(UUID.fromString(idSender))).sendMessage(config.getString("titre") + " Vous avez reçu un message !");
-                                } catch (NullPointerException ignored) {}
+                                } catch (NullPointerException ignored) {
+                                }
                                 config.set(enTete + ".idSender", null);
                                 main.saveConfig();
                             }

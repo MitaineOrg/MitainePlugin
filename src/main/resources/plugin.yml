@@ -39,7 +39,7 @@ commands:
   leaderboard:
     description: Afficher les plus riches du serveur
     permission: mitaine.leaderboard
-    aliases: [top]
+    aliases: [top, classement]
 
   #Mairie
   mairie:
@@ -72,6 +72,10 @@ commands:
   delspawn:
     description: Supprimer le point spawn
     permission: mitaine.delspawn
+  homelist:
+    description: Afficher la liste des homes
+    permission: mitaine.homelist
+    aliases: [homeliste]
 
   #Vote
   vote:
@@ -120,6 +124,8 @@ permissions:
   mitaine.sethome:
     default: true
   mitaine.delhome:
+    default: true
+  mitaine.homelist:
     default: true
 
   mitaine.vote:

@@ -30,6 +30,7 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
 
         if (sender instanceof Player player) {
 
+            UUID pId = player.getUniqueId();
             String command = cmd.getName().toLowerCase();
             FileConfiguration config = main.getConfig();
 
@@ -53,7 +54,7 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
                 delTeleport(player, "spawnPoint");
             } else if (command.equals("sethome")) {
                 if (args.length == 1) {
-                    setTeleport(player, config, player.getUniqueId() + ".teleports." + args[0]);
+                    setTeleport(player, config, pId + ".teleports." + args[0]);
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /sethome <nom>");
                 }
@@ -61,16 +62,36 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
 
             } else if (command.equals("home")) {
                 if (args.length == 1) {
-                    enqueueTeleport(player, player.getUniqueId() + ".teleports." + args[0]);
+                    enqueueTeleport(player, pId + ".teleports." + args[0]);
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /home <nom>");
                 }
                 return true;
             } else if (command.equals("delhome")) {
                 if (args.length == 1) {
-                    delTeleport(player, player.getUniqueId() + ".teleports." + args[0]);
+                    delTeleport(player, pId + ".teleports." + args[0]);
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /delhome <nom>");
+                }
+            } else if (command.equals("homelist")) {
+                if (args.length == 0) {
+                    StringBuilder message = new StringBuilder();
+                    String keys = config.getKeys(true).toString();
+                    for (String key : keys.split(",")) {
+                        if (key.contains(pId + ".teleports.")) {
+                            key = key.replace(pId + ".teleports.", "");
+                            if (!key.contains(".")) {
+                                message.append("-").append(config.getString("important")).append(key).append(config.getString("normal")).append("\n");
+                            }
+                        }
+                    }
+                    if (!message.isEmpty()) {
+                        player.sendMessage("Voici la liste de vos homes :\n" + message);
+                    } else {
+                        player.sendMessage("Vous n'avez pas encore de homes définis");
+                    }
+                } else {
+                    player.sendMessage(config.getString("erreur") + "Faites /homelist");
                 }
             }
         }

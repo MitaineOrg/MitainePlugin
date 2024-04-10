@@ -56,6 +56,7 @@ public final class MitaineMain extends JavaPlugin {
         getCommand("spawn").setExecutor(teleport);
         getCommand("sethome").setExecutor(teleport);
         getCommand("home").setExecutor(teleport);
+        getCommand("homelist").setExecutor(teleport);
         getCommand("delhome").setExecutor(teleport);
         getCommand("delspawn").setExecutor(teleport);
         teleport.runTaskTimer(this, 0L, 1L);

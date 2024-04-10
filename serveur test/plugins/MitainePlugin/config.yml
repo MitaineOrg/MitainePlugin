@@ -18,22 +18,14 @@ spawnPoint:
 
 # Infos de la Mairie
 mairie:
-  banque: 57
+  banque: 69
   maire: 95f08a24-a484-4771-bf43-e3e2817b74f3
 
 # Les Joueurs et leur data
 95f08a24-a484-4771-bf43-e3e2817b74f3:
-  banque: 84
+  banque: 85
   courriers:
-    nombre: 2
-    '1':
-      date: 05-03-2024 à 20:40:42
-      sender: Hybanos
-      message: 'Je me OPENCL là '
-    '2':
-      date: 16-03-2024 à 00:59:44
-      sender: Skyspirit
-      message: 'test '
+    nombre: 0
   teleports:
     test:
       world: world
@@ -46,8 +38,8 @@ mairie:
       y: 67
       z: -7
   reward:
-    streak: 2
-    date: '2024-04-07'
+    streak: 1
+    date: '2024-04-10'
 b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
   banque: 105
   courriers:
