@@ -25,7 +25,15 @@ mairie:
 95f08a24-a484-4771-bf43-e3e2817b74f3:
   banque: 85
   courriers:
-    nombre: 0
+    nombre: 2
+    '1':
+      date: 12-04-2024 à 23:43:34
+      sender: Skyspirit
+      message: 'hihi '
+    '2':
+      date: 13-04-2024 à 00:24:16
+      sender: Skyspirit
+      message: 'hoho '
   teleports:
     test:
       world: world

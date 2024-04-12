@@ -81,12 +81,12 @@ public class Teleport extends BukkitRunnable implements CommandExecutor, Listene
                         if (key.contains(pId + ".teleports.")) {
                             key = key.replace(pId + ".teleports.", "");
                             if (!key.contains(".")) {
-                                message.append("-").append(config.getString("important")).append(key).append(config.getString("normal")).append("\n");
+                                message.append("\n").append("-").append(config.getString("important")).append(key).append(config.getString("normal"));
                             }
                         }
                     }
                     if (!message.isEmpty()) {
-                        player.sendMessage("Voici la liste de vos homes :\n" + message);
+                        player.sendMessage("Voici la liste de vos homes :" + message);
                     } else {
                         player.sendMessage("Vous n'avez pas encore de homes définis");
                     }
