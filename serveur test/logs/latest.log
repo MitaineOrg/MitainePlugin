@@ -1,510 +1,156 @@
-[00:00:08] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:00:11] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:01:55] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:01:55] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:01:55] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:01:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:01:55] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:01:56] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:01:56] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:01:56] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:01:57] [Server thread/INFO]: [dynmap] Saved 10 pending tile renders in world 'world'
-[00:01:57] [Server thread/INFO]: [dynmap] Disabled
-[00:01:57] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:01:57] [Server thread/INFO]: Au revoir
-[00:01:57] [Server thread/INFO]: Loaded 1298 recipes
-[00:01:57] [Server thread/INFO]: Loaded 1395 advancements
-[00:01:57] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:01:57] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:01:57] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:01:57] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:01:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:01:57] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:01:57] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:01:57] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:01:57] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:01:57] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:01:57] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:01:57] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:01:58] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:01:58] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:01:58] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:01:58] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:01:58] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:01:58] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:01:58] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:01:58] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 10 pending tile renders for world 'world'
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:01:58] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:01:58] [Server thread/INFO]: [dynmap] Enabled
-[00:01:58] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:01:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2958ms or 59 ticks behind
-[00:01:58] [Server thread/INFO]: Timings Reset
-[00:01:59] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:02:00] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:02:01] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
-[00:13:08] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:13:08] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:13:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:13:08] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:13:08] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:13:08] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:13:08] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:13:08] [Server thread/INFO]: [dynmap] Saved 14 pending tile renders in world 'world'
-[00:13:08] [Server thread/INFO]: [dynmap] Disabled
-[00:13:08] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:13:08] [Server thread/INFO]: Au revoir
-[00:13:08] [Server thread/INFO]: Loaded 1298 recipes
-[00:13:08] [Server thread/INFO]: Loaded 1395 advancements
-[00:13:08] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:13:08] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:13:08] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:13:08] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:13:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:13:08] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:13:08] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:13:08] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:13:08] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:13:08] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:13:08] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:13:08] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:13:10] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:13:10] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:13:10] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:13:10] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:13:10] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:13:10] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:13:10] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:13:10] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 14 pending tile renders for world 'world'
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:13:10] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:13:10] [Server thread/INFO]: [dynmap] Enabled
-[00:13:10] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:13:10] [Server thread/INFO]: Timings Reset
-[00:13:10] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:13:12] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:13:14] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:13:18] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[00:13:52] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:13:58] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:14:04] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:15:19] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:15:19] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:15:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:15:19] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:15:19] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:15:19] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:15:19] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:15:19] [Server thread/INFO]: [dynmap] Saved 7 pending tile renders in world 'world'
-[00:15:19] [Server thread/INFO]: [dynmap] Disabled
-[00:15:19] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:15:19] [Server thread/INFO]: Au revoir
-[00:15:19] [Server thread/INFO]: Loaded 1298 recipes
-[00:15:19] [Server thread/INFO]: Loaded 1395 advancements
-[00:15:19] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:15:19] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:15:19] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:15:19] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:15:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:15:19] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:15:19] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:15:19] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:15:19] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:15:19] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:15:19] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:15:19] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:15:21] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:15:21] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:15:21] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:15:21] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:15:21] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:15:21] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:15:21] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:15:21] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 7 pending tile renders for world 'world'
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:15:21] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:15:21] [Server thread/INFO]: [dynmap] Enabled
-[00:15:21] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:15:21] [Server thread/INFO]: Timings Reset
-[00:15:21] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:15:23] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:15:25] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:15:28] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[00:15:30] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
-[00:15:32] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
-[00:15:35] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:15:43] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 3
-[00:15:44] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 6
-[00:15:45] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 5
-[00:15:48] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 2
-[00:15:49] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[00:18:45] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:23:52] [Server thread/INFO]: CONSOLE: Usage: /reload [permissions|commands|confirm]
-[00:23:54] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:23:54] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:23:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:23:54] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:23:55] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:23:55] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:23:55] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:23:56] [Server thread/INFO]: [dynmap] Saved 3 pending tile renders in world 'world'
-[00:23:56] [Server thread/INFO]: [dynmap] Disabled
-[00:23:56] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:23:56] [Server thread/INFO]: Au revoir
-[00:23:56] [Server thread/INFO]: Loaded 1298 recipes
-[00:23:56] [Server thread/INFO]: Loaded 1395 advancements
-[00:23:56] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:23:56] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:23:56] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:23:56] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:23:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:23:56] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:23:56] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:23:56] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:23:56] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:23:56] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:23:56] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:23:56] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:23:57] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:23:57] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:23:57] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:23:57] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:23:57] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:23:57] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:23:57] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:23:57] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 3 pending tile renders for world 'world'
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:23:57] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:23:57] [Server thread/INFO]: [dynmap] Enabled
-[00:23:57] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:23:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2928ms or 58 ticks behind
-[00:23:57] [Server thread/INFO]: Timings Reset
-[00:23:58] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:23:59] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:24:01] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:24:03] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[00:24:04] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:24:16] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit hoho
-[00:25:12] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:25:15] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
-[00:26:26] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:26:34] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
-[00:26:35] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 5
-[00:28:57] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:28:57] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:28:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:28:57] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:28:57] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:28:57] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:28:57] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:28:58] [Server thread/INFO]: [dynmap] Saved 9 pending tile renders in world 'world'
-[00:28:58] [Server thread/INFO]: [dynmap] Disabled
-[00:28:58] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:28:58] [Server thread/INFO]: Au revoir
-[00:28:58] [Server thread/INFO]: Loaded 1298 recipes
-[00:28:58] [Server thread/INFO]: Loaded 1395 advancements
-[00:28:59] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:28:59] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:28:59] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:28:59] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:28:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:28:59] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:28:59] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:28:59] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:28:59] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:28:59] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:28:59] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:28:59] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:29:00] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:29:00] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:29:00] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:29:00] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:29:00] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:29:00] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:29:00] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:29:00] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 9 pending tile renders for world 'world'
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:29:00] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:29:00] [Server thread/INFO]: [dynmap] Enabled
-[00:29:00] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:29:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2989ms or 59 ticks behind
-[00:29:00] [Server thread/INFO]: Timings Reset
-[00:29:01] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:29:07] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:29:09] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
-[00:29:15] [Server thread/INFO]: Skyspirit issued server command: /courrier liste 3
-[00:29:17] [Server thread/INFO]: Skyspirit issued server command: /courrier liste 3
-[00:29:57] [Server thread/INFO]: Skyspirit issued server command: /rl confir
-[00:29:57] [Server thread/INFO]: Skyspirit: Usage: /reload [permissions|commands|confirm]
-[00:29:59] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:29:59] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:29:59] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:29:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:29:59] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:29:59] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:29:59] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:29:59] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:30:00] [Server thread/INFO]: [dynmap] Saved 19 pending tile renders in world 'world'
-[00:30:00] [Server thread/INFO]: [dynmap] Disabled
-[00:30:00] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:30:00] [Server thread/INFO]: Au revoir
-[00:30:00] [Server thread/INFO]: Loaded 1298 recipes
-[00:30:00] [Server thread/INFO]: Loaded 1395 advancements
-[00:30:00] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:30:00] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:30:00] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:30:00] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:30:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:30:00] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:30:00] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:30:00] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:30:00] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:30:00] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:30:00] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:30:00] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:30:01] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:30:01] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:30:01] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:30:01] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:30:01] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:30:01] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:30:01] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:30:01] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 19 pending tile renders for world 'world'
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:30:01] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:30:01] [Server thread/INFO]: [dynmap] Enabled
-[00:30:01] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:30:01] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2862ms or 57 ticks behind
-[00:30:01] [Server thread/INFO]: Timings Reset
-[00:30:02] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:30:02] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:30:04] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
-[00:30:05] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[00:31:38] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:31:38] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:31:38] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:31:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:31:38] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:31:38] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:31:38] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:31:38] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:31:38] [Server thread/INFO]: [dynmap] Saved 5 pending tile renders in world 'world'
-[00:31:38] [Server thread/INFO]: [dynmap] Disabled
-[00:31:38] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:31:38] [Server thread/INFO]: Au revoir
-[00:31:38] [Server thread/INFO]: Loaded 1298 recipes
-[00:31:38] [Server thread/INFO]: Loaded 1395 advancements
-[00:31:38] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:31:38] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:31:38] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:31:38] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:31:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:31:38] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:31:38] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:31:38] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:31:38] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:31:38] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:31:38] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:31:38] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:31:39] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:31:39] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:31:39] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:31:39] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:31:40] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:31:40] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:31:40] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:31:40] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:31:40] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:31:40] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:31:40] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:31:40] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:31:40] [Server thread/INFO]: [dynmap] Loaded 5 pending tile renders for world 'world'
-[00:31:40] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:31:40] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:31:40] [Server thread/INFO]: [dynmap] Enabled
-[00:31:40] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:31:40] [Server thread/INFO]: Timings Reset
-[00:31:40] [Async Chat Thread - #2/INFO]: <Skyspirit> erf
-[00:31:40] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:31:42] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:43] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:43] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:44] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:44] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:45] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:45] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:45] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:46] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:46] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:47] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:47] [Async Chat Thread - #2/INFO]: <Skyspirit> t
-[00:31:48] [Async Chat Thread - #1/INFO]: <Skyspirit> t
-[00:31:50] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:31:53] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:31:55] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[00:31:56] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 1
-[00:31:57] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:31:58] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 1
-[00:34:31] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:34:31] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:34:31] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:34:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:34:31] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:34:31] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:34:31] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:34:31] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:34:32] [Server thread/INFO]: [dynmap] Saved 7 pending tile renders in world 'world'
-[00:34:32] [Server thread/INFO]: [dynmap] Disabled
-[00:34:32] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:34:32] [Server thread/INFO]: Au revoir
-[00:34:32] [Server thread/INFO]: Loaded 1298 recipes
-[00:34:32] [Server thread/INFO]: Loaded 1395 advancements
-[00:34:33] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:34:33] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:34:33] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:34:33] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:34:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:34:33] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:34:33] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:34:33] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:34:33] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:34:33] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:34:33] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:34:33] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:34:34] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:34:34] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:34:34] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:34:34] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:34:34] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:34:34] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:34:34] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:34:34] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 7 pending tile renders for world 'world'
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:34:34] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:34:34] [Server thread/INFO]: [dynmap] Enabled
-[00:34:34] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:34:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3003ms or 60 ticks behind
-[00:34:34] [Server thread/INFO]: Timings Reset
-[00:34:35] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:34:35] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:40:57] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:40:57] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:40:57] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:40:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:40:57] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:40:57] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:40:57] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:40:57] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:40:58] [Server thread/INFO]: [dynmap] Saved 14 pending tile renders in world 'world'
-[00:40:58] [Server thread/INFO]: [dynmap] Disabled
-[00:40:58] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:40:58] [Server thread/INFO]: Au revoir
-[00:40:58] [Server thread/INFO]: Loaded 1298 recipes
-[00:40:58] [Server thread/INFO]: Loaded 1395 advancements
-[00:40:58] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:40:58] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
-[00:40:58] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
-[00:40:58] [Server thread/INFO]: [dynmap] Mod Support API available
-[00:40:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:40:58] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:40:58] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
-[00:40:58] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
-[00:40:58] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[00:40:58] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[00:40:58] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[00:40:58] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[00:40:59] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[00:40:59] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[00:41:00] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[00:41:00] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[00:41:00] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[00:41:00] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[00:41:00] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
-[00:41:00] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[00:41:00] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[00:41:00] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[00:41:00] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[00:41:00] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[00:41:00] [Server thread/INFO]: [dynmap] Loaded 14 pending tile renders for world 'world'
-[00:41:00] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[00:41:00] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[00:41:00] [Server thread/INFO]: [dynmap] Enabled
-[00:41:00] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:41:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2861ms or 57 ticks behind
-[00:41:00] [Server thread/INFO]: Timings Reset
-[00:41:00] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:41:01] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[00:41:12] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[00:41:48] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
-[00:42:40] [Server thread/INFO]: Skyspirit issued server command: /banque
-[00:44:44] [Server thread/INFO]: Skyspirit issued server command: /stop
-[00:44:44] [Server thread/INFO]: [Skyspirit: Stopping the server]
-[00:44:44] [Server thread/INFO]: Stopping server
-[00:44:44] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
-[00:44:44] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[00:44:44] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[00:44:45] [Server thread/INFO]: [dynmap] Saved 13 pending tile renders in world 'world'
-[00:44:45] [Server thread/INFO]: [dynmap] Disabled
-[00:44:45] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:44:45] [Server thread/INFO]: Au revoir
-[00:44:45] [Server thread/INFO]: Saving players
-[00:44:45] [Server thread/INFO]: Skyspirit lost connection: Server closed
-[00:44:45] [Server thread/INFO]: Skyspirit left the game
-[00:44:46] [Server thread/INFO]: Saving worlds
-[00:44:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saved 16 block chunks, 314 entity chunks, 0 poi chunks in world 'world' in 0,05s
-[00:44:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:44:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 97 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
-[00:44:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:44:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[00:44:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[00:44:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:44:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[00:44:46] [Server thread/INFO]: Flushing Chunk IO
-[00:44:46] [Server thread/INFO]: Closing Thread Pool
-[00:44:46] [Server thread/INFO]: Closing Server
+[12:19:15] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[12:19:17] [ServerMain/INFO]: Loaded 1298 recipes
+[12:19:17] [ServerMain/INFO]: Loaded 1395 advancements
+[12:19:17] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[12:19:17] [Server thread/INFO]: Loading properties
+[12:19:17] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
+[12:19:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:19:18] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:19:18] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[12:19:18] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[12:19:18] [Server thread/INFO]: Default game type: SURVIVAL
+[12:19:18] [Server thread/INFO]: Generating keypair
+[12:19:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:19:19] [Server thread/INFO]: Using default channel type
+[12:19:19] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[12:19:19] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[12:19:19] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[12:19:19] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
+[12:19:19] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
+[12:19:19] [Server thread/INFO]: [dynmap] Mod Support API available
+[12:19:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:19:19] [Server thread/INFO]: Preparing level "world"
+[12:19:19] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[12:19:19] [Server thread/INFO]: Time elapsed: 195 ms
+[12:19:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[12:19:19] [Server thread/INFO]: Time elapsed: 32 ms
+[12:19:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[12:19:19] [Server thread/INFO]: Time elapsed: 20 ms
+[12:19:19] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[12:19:19] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
+[12:19:19] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
+[12:19:20] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[12:19:20] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[12:19:20] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[12:19:20] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[12:19:21] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[12:19:21] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[12:19:21] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[12:19:21] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[12:19:22] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[12:19:22] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[12:19:22] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
+[12:19:22] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[12:19:22] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[12:19:22] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[12:19:22] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[12:19:22] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[12:19:22] [Server thread/INFO]: [dynmap] Loaded 13 pending tile renders for world 'world'
+[12:19:22] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[12:19:22] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[12:19:22] [Server thread/INFO]: [dynmap] Enabled
+[12:19:22] [Server thread/INFO]: Running delayed init tasks
+[12:19:22] [Server thread/INFO]: Done (4.916s)! For help, type "help"
+[12:19:22] [Server thread/INFO]: Timings Reset
+[12:19:23] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[12:19:49] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[12:19:50] [Server thread/INFO]: Skyspirit joined the game
+[12:19:50] [Server thread/INFO]: Skyspirit[/127.0.0.1:50240] logged in with entity id 406 at ([world]78.97357402933461, 68.0, 129.43396408014516)
+[12:19:52] [Server thread/INFO]: Skyspirit issued server command: /courrier
+[12:20:24] [Server thread/INFO]: Skyspirit issued server command: /rl cnforim
+[12:20:24] [Server thread/INFO]: Skyspirit: Usage: /reload [permissions|commands|confirm]
+[12:20:27] [Server thread/INFO]: Skyspirit issued server command: /rl confir
+[12:20:27] [Server thread/INFO]: Skyspirit: Usage: /reload [permissions|commands|confirm]
+[12:20:28] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[12:20:28] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[12:20:28] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[12:20:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:20:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:20:28] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
+[12:20:28] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[12:20:28] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[12:20:28] [Server thread/INFO]: [dynmap] Saved 11 pending tile renders in world 'world'
+[12:20:28] [Server thread/INFO]: [dynmap] Disabled
+[12:20:29] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[12:20:29] [Server thread/INFO]: Au revoir
+[12:20:29] [Server thread/INFO]: Loaded 1298 recipes
+[12:20:29] [Server thread/INFO]: Loaded 1395 advancements
+[12:20:29] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[12:20:29] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
+[12:20:29] [Server thread/INFO]: [dynmap] version=git-Paper-401 (MC: 1.20.4)
+[12:20:29] [Server thread/INFO]: [dynmap] Mod Support API available
+[12:20:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:20:29] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[12:20:29] [Server thread/INFO]: Merci d'utiliser Mitaine Plugin
+[12:20:29] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
+[12:20:29] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[12:20:29] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[12:20:29] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[12:20:29] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[12:20:30] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[12:20:30] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[12:20:30] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[12:20:30] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[12:20:31] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[12:20:31] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[12:20:31] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
+[12:20:31] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[12:20:31] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[12:20:31] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[12:20:31] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[12:20:31] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[12:20:31] [Server thread/INFO]: [dynmap] Loaded 11 pending tile renders for world 'world'
+[12:20:31] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[12:20:31] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[12:20:31] [Server thread/INFO]: [dynmap] Enabled
+[12:20:31] [Server thread/INFO]: Skyspirit: Reload complete.
+[12:20:31] [Server thread/INFO]: Timings Reset
+[12:20:31] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[12:20:39] [Server thread/INFO]: Skyspirit issued server command: /courrier
+[12:20:42] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 2
+[12:20:44] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 1
+[12:20:47] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
+[12:21:20] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit Skyspirit
+[12:21:24] [Server thread/INFO]: Skyspirit issued server command: /courrier
+[12:21:27] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
+[12:21:30] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[12:21:32] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 1
+[12:21:34] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
+[12:21:37] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 1
+[12:22:01] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[12:22:01] [Server thread/INFO]: Skyspirit left the game
+[12:22:15] [Server thread/INFO]: Stopping the server
+[12:22:15] [Server thread/INFO]: Stopping server
+[12:22:15] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-4-935
+[12:22:15] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[12:22:15] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[12:22:16] [Server thread/INFO]: [dynmap] Saved 11 pending tile renders in world 'world'
+[12:22:16] [Server thread/INFO]: [dynmap] Disabled
+[12:22:16] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[12:22:16] [Server thread/INFO]: Au revoir
+[12:22:16] [Server thread/INFO]: Saving players
+[12:22:16] [Server thread/INFO]: Saving worlds
+[12:22:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[12:22:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[12:22:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[12:22:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[12:22:17] [Server thread/INFO]: [ChunkHolderManager] Saved 1438 block chunks, 1438 entity chunks, 0 poi chunks in world 'world' in 1,38s
+[12:22:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:22:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0,47s
+[12:22:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:22:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[12:22:18] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0,07s
+[12:22:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:22:18] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[12:22:18] [Server thread/INFO]: Flushing Chunk IO
+[12:22:18] [Server thread/INFO]: Closing Thread Pool
+[12:22:18] [Server thread/INFO]: Closing Server

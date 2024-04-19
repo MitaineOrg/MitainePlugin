@@ -98,6 +98,9 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         if (args.length == 1) {
                             UUID idPlayer = player.getUniqueId();
                             int nbMsg = config.getInt(idPlayer + ".courriers.nombre");
+                            if (nbMsg == 0) {
+                                player.sendMessage("Vous n'avez pas de nouveaux messages");
+                            }
                             for (int i = 1; i <= nbMsg; i++) {
                                 String message = config.getString("discret") +
                                         i + config.getString("normal") +
@@ -119,6 +122,10 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                                 player.sendMessage(action);
                                 player.sendMessage(config.getString("discret") + "-----------------------------------");
                             }
+                            TextComponent action = Component.text(config.getString("important") + "   | Rédiger |");
+                            action = action.hoverEvent(HoverEvent.hoverEvent(HoverEvent.Action.SHOW_TEXT, Component.text("Nouveau message")));
+                            action = action.clickEvent(ClickEvent.clickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/courrier envoyer "));
+                            player.sendMessage(action);
                         } else {
                             player.sendMessage(config.getString("erreur") + "La commande est /courrier liste");
                         }
@@ -149,7 +156,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                                 TextComponent action = Component.text("");
                                 if (!Objects.requireNonNull(config.getString(enTete + ".sender")).equalsIgnoreCase(config.getString("titre") + config.getString("important") + " Admin")) {
                                     action = Component.text(config.getString("valider") + "   | Répondre |");
-                                    action = action.hoverEvent(HoverEvent.hoverEvent(HoverEvent.Action.SHOW_TEXT, Component.text("Lire le message")));
+                                    action = action.hoverEvent(HoverEvent.hoverEvent(HoverEvent.Action.SHOW_TEXT, Component.text("Répondre au message")));
                                     action = action.clickEvent(ClickEvent.clickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/courrier envoyer " + config.getString(enTete + ".sender") + " "));
                                 }
                                 action = action.append(supprimer).append(retour);
