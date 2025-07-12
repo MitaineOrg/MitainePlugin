@@ -1,6 +1,5 @@
 # MitaineEconomy
 
- Plugin déconomie pour mitaine (saison 6)
+ Economy plguin for Mitaine's server
 
 Made by Skyspirit
-Paper 1.20.4
